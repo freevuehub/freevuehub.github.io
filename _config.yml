@@ -1,6 +1,6 @@
 # SITE CONFIGURATION
-baseurl: ""
-url: "https://freevuehub.github.io/"
+baseurl: "/type-theme"
+url: "https://rohanchandra.github.io/"
 
 # THEME-SPECIFIC CONFIGURATION
 theme_settings:
