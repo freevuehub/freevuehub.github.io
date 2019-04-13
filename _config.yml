@@ -1,5 +1,5 @@
 # SITE CONFIGURATION
-baseurl: ""
+baseurl: "/"
 url: "https://freevue.github.io/"
 
 # THEME-SPECIFIC CONFIGURATION
