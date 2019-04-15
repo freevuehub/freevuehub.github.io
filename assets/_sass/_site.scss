@@ -105,7 +105,8 @@ canvas {
 .posts-menu-icon {
   position: absolute;
   top: 30px;
-  right: 90px;
+  --right: 90px;
+  right: 30px;
   width: 20px;
   height: 25px;
   border: 2px solid $gray;
