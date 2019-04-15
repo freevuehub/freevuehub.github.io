@@ -6,7 +6,7 @@ url: "https://freevue.github.io/"
 theme_settings:
   # Meta
   title: FreeVue Hub
-  avatar: assets/img/avatar.png
+  avatar: assets/img/avatar.jpeg
   favicon: assets/favicon.ico
   gravatar: # Email MD5 hash
   description: "A website with blog posts and pages" # used by search engines
