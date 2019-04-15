@@ -518,7 +518,7 @@ canvas {
 }
 
 .tags {
-  margin-top: 20px;
+  margin-top: 15px;
   > li {
     display: inline-block;
     background: darken($white, 5%);
@@ -598,6 +598,7 @@ canvas {
     font-size: 80px;
   }
   .tags > li {
+    margin-top: 5px;
     background: none;
     border: 1px solid rgba($white, 0.4);
     color: $white;
