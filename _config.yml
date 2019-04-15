@@ -1,85 +1,65 @@
-# SITE CONFIGURATION
-baseurl: "/"
-url: "https://freevue.github.io/"
+# Site
+title: FreeVue Blog
+description: freevue
+url: https://freevuehub.github.io/
+logo: halve.png                                       # Site logo
+locale: ko_KR
 
-# THEME-SPECIFIC CONFIGURATION
-theme_settings:
-  # Meta
-  title: FreeVue Hub
-  avatar: assets/img/avatar.jpeg
-  favicon: assets/favicon.ico
-  gravatar: # Email MD5 hash
-  description: "A website with blog posts and pages" # used by search engines
+# Left Block Images
+background:
+  homepage: images/home.png                           # this image will be shown on homepage's left block
+  post-list: images/unsplash-image-10.jpg             # this image will be shown on post list page
+  default-post: images/unsplash-gallery-image-3.jpg   # this image will be shown when post's front matter doesn't specify any image
 
-  # Header and footer text
-  header_text: >
-     <p>FreeVue.</p>
-
-     <p>Remove all header text in <code>_config.yml</code> to disable this feature.</p>
-  header_text_feature_image:
-  footer_text: >
-   Powered by <a href="https://jekyllrb.com/">Jekyll</a> with <a href="https://github.com/rohanchandra/type-theme">Type Theme</a>
-
-  # Icons
-  rss: false
-  email_address: "hackish@hanmail.net"
-  behance:
-  bitbucket:
-  dribbble:
-  facebook:
-  flickr:
-  gitlab:
-  github: "freevuehub"
-  google_plus:
-  instagram:
-  linkedin:  # Full URL
-  pinterest:
-  reddit:
-  soundcloud:
-  stack_exchange:  # Full URL
-  steam:
-  tumblr:
-  twitter:
-  wordpress:
-  youtube:
-
-  # Scripts
-  google_analytics: # Tracking ID, e.g. "UA-000000-01"
-  disqus_shortname:
-  katex: true # Enable if using math markup
-  search: false # Enable the search feature
-
-  # Localization strings
-  str_follow_on: "Follow on"
-  str_rss_follow: "Follow RSS feed"
-  str_email: "Email"
-  str_next_post: "Next post"
-  str_previous_post: "Previous post"
-  str_next_page: "Next"
-  str_previous_page: "Prev"
-  str_continue_reading: "Continue reading"
-  str_javascript_required_disqus: "Please enable JavaScript to view comments."
-  str_search_no_results: "No results found."
-
-  # Colours, typography and padding
-  # Open the "_sass > base" folder, and open "_variables.scss"
-  google_fonts: "Source+Sans+Pro:400,700,700italic,400italic"
-
-  # Post navigation
-  post_navigation: false
-
-# PAGINATION
-paginate: 5
-paginate_path: "blog/page:num"
-
-# BUILD SETTINGS
-markdown: kramdown
-highlighter: rouge
+# Jekyll
+permalink:          /:title/
+markdown:           kramdown
+highlighter:        rouge
+kramdown:
+  auto_ids:         true
+  footnote_nr:      1
+  entity_output:    as_char
+  toc_levels:       1..6
+  enable_coderay:   false
 sass:
-  sass_dir: _sass
-  style: :compressed
-plugins: [jekyll-paginate]
-theme: jekyll-theme-cayman
-exclude:
-  - Gemfile
-  - Gemfile.lock
+  sass_dir:         assets/_sass
+  style:            compressed
+
+# Google Analytics
+#google-analytics: UA-XXXXX-Y
+
+# Social Links
+email:             hackish@hanmail.net
+#google.plus:        username
+#twitter:            username
+#facebook:           username
+github:             freevuehub
+#stackoverflow:     123456/username   from a "http://stackoverflow.com/users/123456/username" link
+#linkedin:          username
+#xing:              username
+#instagram:          username
+#lastfm:            username
+#tumblr:            username
+#pinterest:         username
+#foursquare:        username
+#steam:              username
+#dribbble:          username
+#youtube:           username
+#soundcloud:        username
+#weibo:             username
+#flickr:            username
+#codepen:           username
+#keybase:           username
+#xmpp:              username@server.com
+#hackernews:        username
+#behance:           username
+
+# Gems
+gems:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-gist
+
+# Exclude list
+include: [_pages]
+exclude: [README.md, Gemfile, Gemfile.lock, _site, src, vendor, CNAME, LICENSE, Rakefile, .sass-cache, .DS_Store]
