@@ -1,10 +1,8 @@
 ---
 layout: home
 ---
-# About Theme
+# About FreeVue
 
-This theme is Jekyll port of [vangeltzo.com](http://vangeltzo.com/) (by [Vangelis Tzortzis](https://github.com/srekoble)).
+Vue.js와 React.js를 주로 다루는 웹 프론트 개발자입니다.
 
-To learn how to install and use this theme check out the [installation guide](http://taylantatli.me/Halve/halve-theme/) for more information.
-
-If you have a question, find a bug, or just want to say hi, please open an [issue on GitHub](https://github.com/TaylanTatli/Halve/issues/new).
+네이버 블로드에서 우선적으로 포스팅을 확인할 수 있습니다. [https://freevue.blog.me](https://freevue.blog.me)
