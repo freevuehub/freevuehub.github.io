@@ -737,7 +737,7 @@ canvas {
 
 @media screen and (max-width: 640px) {
     .posts-list {
-        margin-top: 80px;
+        --margin-top: 80px;
         > li {
             .post-title {
                 max-width: 100%;
