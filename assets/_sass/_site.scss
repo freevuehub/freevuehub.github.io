@@ -520,8 +520,9 @@ canvas {
 }
 
 .tags {
-    margin-top: 15px;
+    margin-top: 10px;
     > li {
+        margin-top: 5px;
         display: inline-block;
         background: darken($white, 5%);
         padding: 7px 10px;
