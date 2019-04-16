@@ -16,6 +16,6 @@ layout: home
 2018.08.20 ~
 > 비마이카(뿅카) / 모빌리티 광고 / 사원 / 프론트 개발자
 
-네이버 블로그에서 우선적으로 포스팅을 확인할 수 있습니다.
-[https://freevue.blog.me](https://freevue.blog.me)
+###### 네이버 블로그에서 우선적으로 포스팅을 확인할 수 있습니다.
+[[https://freevue.blog.me](https://freevue.blog.me)]
 {: .notice}
