@@ -105,7 +105,8 @@ canvas {
 .posts-menu-icon {
   position: absolute;
   top: 30px;
-  right: 90px;
+  --right: 90px;
+  right: 30px;
   width: 20px;
   height: 25px;
   border: 2px solid $gray;
@@ -148,7 +149,8 @@ canvas {
 }
 
 .posts-link {
-  right: 90px;
+  --right: 90px;
+  right: 30px;
 }
 
 .projects-link {
@@ -391,6 +393,7 @@ canvas {
 .main-info {
   color: $white;
   h1 {
+    margin-top: 10px;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -516,7 +519,7 @@ canvas {
 }
 
 .tags {
-  margin-top: 20px;
+  margin-top: 15px;
   > li {
     display: inline-block;
     background: darken($white, 5%);
@@ -596,6 +599,7 @@ canvas {
     font-size: 80px;
   }
   .tags > li {
+    margin-top: 5px;
     background: none;
     border: 1px solid rgba($white, 0.4);
     color: $white;
