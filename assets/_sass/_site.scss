@@ -791,6 +791,12 @@ canvas {
     }
 }
 
+@media screen and (max-height: 812px) {
+    .content {
+        padding-top: 0;
+    }
+}
+
 // entry meta used in tags and categories page
 .entry-meta {
     font-size: .75rem;
