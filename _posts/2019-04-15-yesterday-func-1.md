@@ -1,12 +1,11 @@
 ---
 layout: post
-title:  "매일 함수"
+title:  "어제 함수"
 date:   2019-04-15
-excerpt: "함수형 자바스크립트"
+excerpt: "지나간 함수형 자바스크립트"
 categories:
-- Today Function
+- Yesterday Function
 tag:
-- 매일함수
 - 함수형
 - javascript
 ---
