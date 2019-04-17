@@ -1,6 +1,6 @@
 ---
 layout: post-list
-title: Posts
+title: c
 description: "List of posts"
 permalink: /vue.html
 ---

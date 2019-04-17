@@ -1,6 +1,6 @@
 ---
 layout: post-list
-title: Posts
+title: Today Function
 description: "List of posts"
 permalink: /function.html
 ---

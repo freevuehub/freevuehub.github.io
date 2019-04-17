@@ -1,6 +1,6 @@
 ---
 layout: post-list
-title: Posts
+title: Today Algorithm
 description: "List of posts"
 permalink: /algorithm.html
 ---
