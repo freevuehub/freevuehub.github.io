@@ -23,13 +23,8 @@ layout: compress
     <div class="content">
         <ul class="posts-list">
             {% for post in site.posts %}
+            {% if post.categories == Vue %}
             <li>
-                {% if post.categories == Vue %}
-                <h2>{{ post.categories }}</h2>
-                {% endif %}
-                <h2>{{ post.categories === Vue }}</h2>
-                <h2>{{ post.categories == Vue }}</h2>
-                <h2>{{ post.categories = Vue }}</h2>
                 <h2>
                     <a href="{{ site.url }}{{ post.url }}" class="post-title">
                         <span>{{ post.title | markdownify | remove: "<p>" | remove: "</p>" }}</span>
@@ -45,6 +40,7 @@ layout: compress
                     {% endfor %}
                 </ul>
             </li>
+            {% endif %}
             {% endfor %}
         </ul>
     </div>
