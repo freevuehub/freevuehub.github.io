@@ -42,10 +42,10 @@ const recordAnimationFrames = (callback, autoStart = true) => {
 
 // 예시
 const cb = () => console.log('Animation frame fired');
-const recorder = recordAnimationFrames(cd); // logs 'Animation frame fired' on each animation frame
+const recorder = recordAnimationFrames(cb); // logs 'Animation frame fired' on each animation frame
 recorder.stop(); // stops logging
 recorder.start(); // starts logging
-const redorder2 = recordAnimationFrames(cd, false); // `srart` needs to be explicitly called to begin recording frames
+const recorder2 = recordAnimationFrames(cb, false); // `start` needs to be explicitly called to begin recording frames
 ```
 
 ![예제 이미지 1]({{ site.url }}/images/function/0/20190414.png)
