@@ -44,7 +44,7 @@ layout: compress
             {% for (post, index) in site.posts %}
             <li>
                 {{ index }}
-                {% if post.categories %}
+                {% if post.categories == "Vue" %}
                 {{ post.categories }}
                 {% endif %}
                 <h2>
