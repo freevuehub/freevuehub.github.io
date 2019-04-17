@@ -22,9 +22,8 @@ layout: compress
     </a> -->
     <div class="content">
         <ul class="posts-list">
-            {% for (post, index) in site.posts %}
+            {% for post in site.posts %}
             <li>
-                {{ index }}
                 {% if post.categories == "Vue" %}
                 {{ post.categories }}
                 {% endif %}
