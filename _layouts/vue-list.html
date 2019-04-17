@@ -24,8 +24,7 @@ layout: compress
         <ul class="posts-list">
             {% for post in site.posts %}
             <li>
-                {{ 1 == 1 }}
-                {% if post.categories == "Vue" %}
+                {% if post.categories %}
                 {{ post.categories }}
                 {% endif %}
                 <h2>
