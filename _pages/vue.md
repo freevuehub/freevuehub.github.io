@@ -1,6 +1,6 @@
 ---
 layout: vue-list
-title: c
-description: "List of posts"
+title: Vue
+description: "Vue of posts"
 permalink: /vue.html
 ---
