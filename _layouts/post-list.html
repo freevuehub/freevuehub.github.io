@@ -23,9 +23,10 @@ layout: compress
     <div class="content">
         <ul class="posts-list">
             {% for post in site.posts %}
-            {{ post.categories == 'Vue' }}
-            {{ post.categories = 'Vue' }}
-            {{ post.categories === 'Vue' }}
+
+            {% if post.categories == 'Vue' %}
+            <span>{{ post.categories }}</span>
+            {% endif %}
             <li>
                 <h2>
                     <a href="{{ site.url }}{{ post.url }}" class="post-title">
