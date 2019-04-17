@@ -41,8 +41,9 @@ layout: compress
             </li>
             {% endfor %}
 
-            {% for post in site.posts %}
+            {% for (post, index) in site.posts %}
             <li>
+                {{ index }}
                 {% if post.categories %}
                 {{ post.categories }}
                 {% endif %}
