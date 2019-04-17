@@ -24,6 +24,7 @@ layout: compress
         <ul class="posts-list">
             {% for post in site.posts %}
             <li>
+                {{ post.categories }}
                 <h2>
                     <a href="{{ site.url }}{{ post.url }}" class="post-title">
                         <span>{{ post.title | markdownify | remove: "<p>" | remove: "</p>" }}</span>
