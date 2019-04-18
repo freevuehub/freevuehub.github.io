@@ -159,6 +159,7 @@ canvas {
     }
 }
 
+.tags-link,
 .posts-link,
 .projects-link {
     position: absolute;
@@ -174,6 +175,10 @@ canvas {
 
 .projects-link {
     right: 20px;
+}
+
+.tags-link {
+    right: 80px;
 }
 
 .overlay {
