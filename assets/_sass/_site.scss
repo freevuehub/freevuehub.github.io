@@ -777,6 +777,9 @@ canvas {
             }
         }
     }
+    .content {
+        padding: 20px;
+    }
     .inner-post {
         padding-top: 85px;
 
@@ -810,9 +813,6 @@ canvas {
     .projects-menu li {
         width: 100% !important;
         height: 50% !important;
-    }
-    .content {
-        padding: 20px;
     }
 }
 
