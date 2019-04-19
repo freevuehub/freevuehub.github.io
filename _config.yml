@@ -7,23 +7,23 @@ locale: ko_KR
 
 # Left Block Images
 background:
-  homepage: images/bg/home.jpg                           # this image will be shown on homepage's left block
-  post-list: images/bg/post_list.jpg             # this image will be shown on post list page
-  default-post: images/bg/post_bg.jpg   # this image will be shown when post's front matter doesn't specify any image
+    homepage: images/bg/home.jpg                           # this image will be shown on homepage's left block
+    post-list: images/bg/post_list.jpg             # this image will be shown on post list page
+    default-post: images/bg/post_bg.jpg   # this image will be shown when post's front matter doesn't specify any image
 
 # Jekyll
 permalink:          /:title/
 markdown:           kramdown
 highlighter:        rouge
 kramdown:
-  auto_ids:         true
-  footnote_nr:      1
-  entity_output:    as_char
-  toc_levels:       1..6
-  enable_coderay:   false
+    auto_ids:         true
+    footnote_nr:      1
+    entity_output:    as_char
+    toc_levels:       1..6
+    enable_coderay:   false
 sass:
-  sass_dir:         assets/_sass
-  style:            compressed
+    sass_dir:         assets/_sass
+    style:            compressed
 
 # Google Analytics
 google-analytics: UA-138408307-1
@@ -56,10 +56,14 @@ github:             freevuehub
 
 # Gems
 gems:
-  - jekyll-feed
-  - jekyll-sitemap
-  - jekyll-gist
+- jekyll-feed
+- jekyll-sitemap
+- jekyll-gist
 
 # Exclude list
 include: [_pages]
 exclude: [README.md, Gemfile, Gemfile.lock, _site, src, vendor, CNAME, LICENSE, Rakefile, .sass-cache, .DS_Store]
+
+# disqus
+disqus_url: http://disqus.com/by/disqus_TNIcpLeybV
+disqus_id: https-freevuehub-github-io
