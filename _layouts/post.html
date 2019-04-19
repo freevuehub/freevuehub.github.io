@@ -41,7 +41,9 @@ layout: compress
         {% include page-pagination.html %}
     </div>
 
+    {% if page.comments %}
     {% include comments.html %}
+    {% endif %}
 </div>
 {% include scripts.html %}
 {% include overlay.html %}
