@@ -1,5 +1,6 @@
 ---
 layout: compress
+menuTitle: true
 ---
 
 <!DOCTYPE html>
@@ -25,16 +26,7 @@ layout: compress
 </div>
 
 <div class="block-right">
-    <a href="{{ site.url }}/posts" title="posts" class="posts-menu-icon"></a>
-    <span class="posts-link">POSTS</span>
-    <a href="{{ site.url }}/tags" title="tags" class="tags-menu-icon">
-        <i class="fa fa-tags"></i>
-    </a>
-    <span class="tags-link">TAGS</span>
-    <!-- <a title="project" class="projects-menu-icon">
-      <span></span>
-    </a> -->
-    <!-- <span class="projects-link">PROJECTS</span> -->
+    {% include menu-btn.html %}
     <div class="content">
         <div class="about-info">
             {{ content }}
