@@ -1,15 +1,13 @@
 ---
 layout: home
 ---
-# About FreeVue
-
 <iframe src="https://ghbtns.com/github-btn.html?user=freevuehub&repo=freevuehub.github.io&type=star&count=true&size=large" frameborder="0" scrolling="0" width="160px" height="30px"></iframe>
+
+# About FreeVue
 
 앞으로 구글 및 네이버, 카카오 등 여러 세미나에 서서 발표를 할 프론트 개발자입니다.
 
 주요 포스팅은 Vue.js이며 추후에 React.js와 React-Native 개발기도 추가할 예정입니다.
-
-[태그](/tags)를 이용하시면 원하시는 글을 조금 더 쉽게 찾으실 수 있습니다.
 
 #### 2012 ~ 2016
 명지전문대 / 전기과 / 졸업
