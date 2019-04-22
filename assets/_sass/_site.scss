@@ -756,7 +756,7 @@ canvas {
 }
 
 // Media queries
-@media screen and (max-height: 800px) {
+@media screen and (min-height: 800px) {
     .about-info {
         margin-top: 80px;
     }
