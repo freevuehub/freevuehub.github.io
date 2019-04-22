@@ -22,7 +22,7 @@ layout: compress
     </a> -->
     <div class="content">
         <ul class="posts-list">
-            {% for post in site.vue %}
+            {% for post in site.posts %}
             {% if post.vue %}
             <p>{{ post.excerpt | strip_html | truncatewords:10 }}</p>
             {% endif %}
