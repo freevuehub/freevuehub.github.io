@@ -23,6 +23,7 @@ layout: compress
     <div class="content">
         <ul class="posts-list">
             {% for post in site.posts %}
+            {{ post.categories }}
             {% if post.vue %}
             <li>
                 <h2>
