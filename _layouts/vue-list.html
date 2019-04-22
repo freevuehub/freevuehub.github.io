@@ -24,8 +24,6 @@ layout: compress
         <ul class="posts-list">
             {% for post in site.posts %}
             {% if post.vue %}
-            <p>{{ post.excerpt | strip_html | truncatewords:10 }}</p>
-            {% endif %}
             <li>
                 <h2>
                     <a href="{{ site.url }}{{ post.url }}" class="post-title">
@@ -42,6 +40,7 @@ layout: compress
                     {% endfor %}
                 </ul>
             </li>
+            {% endif %}
             {% endfor %}
         </ul>
     </div>
