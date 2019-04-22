@@ -25,6 +25,7 @@ layout: compress
             {% for post in site.posts %}
             {% if post.vue %}
             {{ post.categories }}
+            {{ post.categories.vue }}
             <li>
                 <h2>
                     <a href="{{ site.url }}{{ post.url }}" class="post-title">
