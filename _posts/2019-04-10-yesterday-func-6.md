@@ -12,15 +12,16 @@ tag:
 ---
 
 ```javascript
-// intersectionWith
-// 제공된 비교 함수를 사용하여 두 배열에 있는 요소의 목록을 반환합니다.
+// elementContains
+// 부모 요소가 자식 요소를 포함하면 true를 반환하고 그렇지 않으면 false를 반환합니다.
 //
-// 제공된 비교 자와 함께 Array.filter() 및 Array.findIndex()를 사용하여 교차 값을 결정합니다.
+// 부모가 자식 요소와 같은 요소가 아닌지 확인하고 parent.contains (child)를 사용하여 부모 요소에 자식 요소가 있는지 확인합니다.
 
-const intersectionWith = (a, b, comp) => a.filter(x => b.findIndex(y => comp(x, y)) !== -1);
+const elementContains = (parent, child) => parent !== child && parent.contains(child);
 
 // 예시
-intersectionWith([1, 1.2, 1.5, 3, 0], [1.9, 3, 0, 3.9], (a, b) => Math.round(a) === Math.round(b)); // [1.5, 3, 0]
+elementContains(document.querySelector('head'), document.querySelector('title')); // true
+elementContains(document.querySelector('head'), document.querySelector('body')); // false
 ```
 
 ![예제 이미지 1]({{ site.url }}/images/function/0/20190410.png)
