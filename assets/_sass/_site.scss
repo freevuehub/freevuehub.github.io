@@ -64,17 +64,17 @@ canvas {
 
 .code-menu-icon {
     top: 30px;
-    right: 80px;
+    right: 140px;
     font-size: 35px;
 }
 .function-menu-icon {
     top: 30px;
-    right: 80px;
+    right: 220px;
     font-size: 35px;
 }
 .algorithm-menu-icon {
     top: 30px;
-    right: 80px;
+    right: 300px;
     font-size: 35px;
 }
 .tags-menu-icon {
@@ -177,9 +177,7 @@ canvas {
     }
 }
 
-.tags-link,
-.posts-link,
-.projects-link {
+.menu-link {
     position: absolute;
     top: 73px;
     font-size: 12px;
@@ -195,6 +193,15 @@ canvas {
     right: 20px;
 }
 
+.dev-link {
+    right: 125px;
+}
+.function-link {
+    right: 205px;
+}
+.algorithm-link {
+    right: 305px;
+}
 .tags-link {
     right: 85px;
 }
