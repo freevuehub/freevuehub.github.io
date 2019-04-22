@@ -1,6 +1,6 @@
 ---
 layout: dev-list
-title: Develop
+title: Dev.
 description: "List of Develop"
 permalink: /dev.html
 ---
