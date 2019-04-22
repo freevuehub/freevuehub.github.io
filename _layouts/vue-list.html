@@ -22,11 +22,8 @@ layout: compress
     </a> -->
     <div class="content">
         <ul class="posts-list">
-            {% for post in site.vue %}
+            {% for post in site.posts.vue %}
             <li>
-                {% if post.categories %}
-                {{ post.categories }}
-                {% endif %}
                 <h2>
                     <a href="{{ site.url }}{{ post.url }}" class="post-title">
                         <span>{{ post.title | markdownify | remove: "<p>" | remove: "</p>" }}</span>
