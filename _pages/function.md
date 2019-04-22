@@ -1,6 +1,6 @@
 ---
-layout: post-list
+layout: func-list
 title: Today Function
-description: "List of posts"
+description: "List of Function"
 permalink: /function.html
 ---

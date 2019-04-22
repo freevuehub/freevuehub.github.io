@@ -46,11 +46,8 @@ canvas {
     z-index: 0;
 }
 
-.tags-menu-icon {
+.menu-icon-btn {
     position: absolute;
-    top: 30px;
-    right: 80px;
-    font-size: 35px;
 
     i {
         color: #d4d4d4;
@@ -63,6 +60,27 @@ canvas {
             color: $green;
         }
     }
+}
+
+.code-menu-icon {
+    top: 30px;
+    right: 80px;
+    font-size: 35px;
+}
+.function-menu-icon {
+    top: 30px;
+    right: 80px;
+    font-size: 35px;
+}
+.algorithm-menu-icon {
+    top: 30px;
+    right: 80px;
+    font-size: 35px;
+}
+.tags-menu-icon {
+    top: 30px;
+    right: 80px;
+    font-size: 35px;
 }
 .projects-menu-icon {
     position: absolute;
@@ -761,7 +779,7 @@ canvas {
 
 @media screen and (max-width: 640px) {
     .posts-list {
-        --margin-top: 80px;
+        margin-top: 80px;
         > li {
             .post-title {
                 max-width: 100%;
@@ -813,12 +831,6 @@ canvas {
     .projects-menu li {
         width: 100% !important;
         height: 50% !important;
-    }
-}
-
-@media screen and (max-height: 800px) {
-    .content {
-        padding-top: 85px;
     }
 }
 

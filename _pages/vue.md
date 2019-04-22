@@ -1,6 +1,6 @@
 ---
-layout: vue-list
-title: Vue
-description: "List of posts"
-permalink: /vue.html
+layout: dev-list
+title: Develop
+description: "List of Develop"
+permalink: /dev.html
 ---

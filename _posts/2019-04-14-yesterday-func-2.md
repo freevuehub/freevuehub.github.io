@@ -3,6 +3,7 @@ layout: post
 title:  "어제 함수"
 date:   2019-04-14
 excerpt: "지나간 함수형 자바스크립트"
+function: true
 categories:
 - Yesterday Function
 tag:
