@@ -756,6 +756,12 @@ canvas {
 }
 
 // Media queries
+@media screen and (max-height: 800px) {
+    .about-info {
+        margin-top: 80px;
+    }
+}
+
 @media screen and (max-height: 605px) {
     .post-title-section .section-title {
         font-size: 45px;
