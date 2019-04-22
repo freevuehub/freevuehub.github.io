@@ -756,12 +756,6 @@ canvas {
 }
 
 // Media queries
-@media screen and (min-height: 800px) {
-    .about-info {
-        margin-top: 80px;
-    }
-}
-
 @media screen and (max-height: 605px) {
     .post-title-section .section-title {
         font-size: 45px;
@@ -787,6 +781,10 @@ canvas {
     }
     .share-buttons span {
         display: none;
+    }
+
+    .about-info {
+        margin-top: 80px;
     }
 }
 
