@@ -63,7 +63,3 @@ gems:
 # Exclude list
 include: [_pages]
 exclude: [README.md, Gemfile, Gemfile.lock, _site, src, vendor, CNAME, LICENSE, Rakefile, .sass-cache, .DS_Store]
-
-# disqus
-disqus_url: http://disqus.com/by/disqus_TNIcpLeybV
-disqus_id: https-freevuehub-github-io
