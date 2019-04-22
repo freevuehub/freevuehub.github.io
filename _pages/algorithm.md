@@ -1,5 +1,5 @@
 ---
-layout: post-list
+layout: algorithm-list
 title: Today Algorithm
 description: "List of Algorithm"
 permalink: /algorithm.html
