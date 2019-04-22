@@ -1,6 +1,6 @@
 ---
 layout: algorithm-list
-title: Today Algorithm
+title: Today Algo.
 description: "List of Algorithm"
 permalink: /algorithm.html
 ---
