@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "어제 함수"
-date:   2019-04-11
-excerpt: "지나간 함수형 자바스크립트"
+title:  "매일 함수"
+date:   2019-04-10
+excerpt: "함수형 자바스크립트"
 function: true
 categories:
 - Yesterday Function
