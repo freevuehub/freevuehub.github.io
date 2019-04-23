@@ -1,5 +1,6 @@
 .block-left {
     float: left;
+    display: table;
     .content {
         z-index: 1;
         position: relative;
@@ -16,7 +17,6 @@
     width: 50%;
     height: 100%;
     position: relative;
-    display: table;
     > div {
         display: table-cell;
         vertical-align: middle;
@@ -35,6 +35,7 @@
     padding: 60px;
     max-width: 600px;
     margin: 0 auto;
+    padding-top: 0;
 }
 
 canvas {
@@ -46,37 +47,34 @@ canvas {
     z-index: 0;
 }
 
-.menu-icon-btn {
-    position: absolute;
+.block-right>.menu-box {
+    padding: 20px;
+    display: flex;
+    justify-content: flex-end;
 
-    i {
-        color: #d4d4d4;
-    }
+    .btn-box {
+        text-align: center;
+        margin-left: 10px;
 
-    &:hover {
-        color: $green;
+        .menu-icon-btn {
+            display: block;
+            font-size: 35px;
 
-        i {
-            color: $green;
+            i {
+                color: #d4d4d4;
+            }
+
+            &:hover {
+                color: $green;
+
+                i {
+                    color: $green;
+                }
+            }
         }
-    }
+}
 }
 
-.dev-menu-icon {
-    top: 30px;
-    right: 30px;
-    font-size: 35px;
-}
-.function-menu-icon {
-    top: 30px;
-    right: 95px;
-    font-size: 35px;
-}
-.algorithm-menu-icon {
-    top: 30px;
-    right: 160px;
-    font-size: 35px;
-}
 .tags-menu-icon {
     top: 30px;
     right: 80px;
@@ -178,8 +176,6 @@ canvas {
 }
 
 .menu-link {
-    position: absolute;
-    top: 73px;
     font-size: 12px;
     color: darken($white, 40);
 }
@@ -193,15 +189,6 @@ canvas {
     right: 20px;
 }
 
-.dev-link {
-    right: 25px;
-}
-.function-link {
-    right: 85px;
-}
-.algorithm-link {
-    right: 155px;
-}
 .tags-link {
     right: 85px;
 }
@@ -459,6 +446,7 @@ canvas {
 }
 
 .about-info {
+    margin-top: 60px;
     text-align: left;
     h1,
     h2 {
@@ -530,7 +518,7 @@ canvas {
 }
 
 .posts-list {
-    margin: 50px 0;
+    margin: 0  0 50px 0;
     > li {
         margin-bottom: 23px;
         padding-bottom: 20px;
@@ -710,6 +698,7 @@ canvas {
 .date-highlight {
     text-align: center;
     margin: 50px 0;
+    margin-top: 0;
     color: darken($white, 40);
     display: -webkit-box;
     display: -moz-box;
@@ -784,13 +773,12 @@ canvas {
     }
 
     .about-info {
-        margin-top: 80px;
+        margin-top: 0;
     }
 }
 
 @media screen and (max-width: 640px) {
     .posts-list {
-        margin-top: 80px;
         > li {
             .post-title {
                 max-width: 100%;
@@ -810,8 +798,6 @@ canvas {
         padding: 20px;
     }
     .inner-post {
-        padding-top: 100px;
-
         h2 {
             font-size: 20px;
             margin-bottom: 20px;
