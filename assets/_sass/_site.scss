@@ -28,7 +28,7 @@
 
 .inactive {
     pointer-events: none;
-    pointer: default;
+    cursor: default;
 }
 
 .content {
@@ -50,7 +50,7 @@ canvas {
 .block-right>.menu-box {
     padding: 20px;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-evenly;
 
     .btn-box {
         text-align: center;
@@ -212,7 +212,6 @@ canvas {
     font-size: 0;
     height: 100%;
     > li {
-        display: inline-block;
         width: calc(100%/3);
         background: $overlay-color;
         height: 50%;
@@ -537,7 +536,6 @@ canvas {
         .date {
             color: #399f62;
             float: right;
-            display: inline-block;
             font-size: 15px;
             padding-top: 10px;
             text-transform: uppercase;
