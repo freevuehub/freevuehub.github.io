@@ -10,6 +10,10 @@
 .block-right {
     float: right;
     overflow-y: auto;
+    .content {
+        display: block;
+        height: auto;
+    }
 }
 
 .block-left,
