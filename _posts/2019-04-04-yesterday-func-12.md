@@ -32,6 +32,6 @@ const parseCookie = str =>
 parseCookie('foo=bar; equation=E=mc^2'); // { foo: 'bar', equation: 'E=mc^2' }
 ```
 
-![예제 이미지 1]({{ site.url }}/images/function/0/20190404.png)
+![예제 이미지 1]({{ site.url }}/images/function/0/20190404.jpeg)
 
 [출처: [http://30.surge.sh/](http://30.surge.sh/)]
