@@ -20,13 +20,13 @@ tag:
 // Array.reduce() 및 decodeURIComponent()를 사용하여 모든 키 - 값 쌍이 있는 객체를 만듭니다.
 
 const parseCookie = str =>
-    str
-        .split(';')
-        .map(v => v.split('='))
-        .reduce((acc, v) => {
-            acc[decodeURIComponent(v[0].trim())] = decodeURIComponent(v[1].trim());
-            return acc;
-        }, {});
+  str
+    .split(';')
+    .map(v => v.split('='))
+    .reduce((acc, v) => {
+      acc[decodeURIComponent(v[0].trim())] = decodeURIComponent(v[1].trim());
+      return acc;
+    }, {});
 
 // 예시
 parseCookie('foo=bar; equation=E=mc^2'); // { foo: 'bar', equation: 'E=mc^2' }
