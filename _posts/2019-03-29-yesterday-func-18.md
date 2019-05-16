@@ -30,6 +30,6 @@ isPrimitive(symbol()); // true
 isPrimitive([]); // false
 ```
 
-![예제 이미지 1]({{ site.url }}/images/function/0/20190329.jpeg)
+![예제 이미지 1]({{ site.url }}/images/function/0/20190329.png)
 
 [출처: [http://30.surge.sh/](http://30.surge.sh/)]
