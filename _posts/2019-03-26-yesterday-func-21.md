@@ -25,6 +25,6 @@ matches({ age: 25, hair: 'long', bread: true }, { hair: 'long', bread: true }); 
 matches({hair: 'long', bread: true }, { age: 25, hair: 'long', bread: true }); // false
 ```
 
-![예제 이미지 1]({{ site.url }}/images/function/0/20190327.jpeg)
+![예제 이미지 1]({{ site.url }}/images/function/0/20190326.jpeg)
 
 [출처: [http://30.surge.sh/](http://30.surge.sh/)]
