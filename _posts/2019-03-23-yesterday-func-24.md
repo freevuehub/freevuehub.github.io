@@ -23,7 +23,7 @@ const intersection = (a, b) => {
 };
 
 // 예시
-intersection([1, 2, 3], [4, 3, 2]); [2, 3]
+intersection([1, 2, 3], [4, 3, 2]); // [2, 3]
 ```
 
 ![예제 이미지 1]({{ site.url }}/images/function/0/20190323.jpeg)
