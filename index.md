@@ -4,12 +4,15 @@ layout: home
 <iframe src="https://ghbtns.com/github-btn.html?user=freevuehub&repo=freevuehub.github.io&type=star&count=true&size=large" frameborder="0" scrolling="0" width="160px" height="30px"></iframe>
 
 # About FreeVue
-
 앞으로 여러 세미나에 서서 발표하는 것이 꿈인 프론트 개발자입니다.
 
-* HTML, CSS, jQuery
-* javascript
-* Vue.js, React.js
+## 기술 스택
+- 기술 스택
+
+[[포트폴리오](/portfolio)]
+{: .notice}
+
+## 이력 및 경력
 
 #### 2012 ~ 2016
 명지전문대 / 전기과 / 졸업
@@ -22,4 +25,3 @@ layout: home
 
 #### 2018.08.20 ~
 비마이카(뿅카) / 모빌리티 광고 / 주임 / 프론트 개발
-{: .notice_info}
