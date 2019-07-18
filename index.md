@@ -3,24 +3,19 @@ layout: home
 ---
 <iframe src="https://ghbtns.com/github-btn.html?user=freevuehub&repo=freevuehub.github.io&type=star&count=true&size=large" frameborder="0" scrolling="0" width="160px" height="30px"></iframe>
 
-## About FreeVue
-차세대
-
+# About FreeVue
 앞으로 여러 세미나에 서서 발표하는 것이 꿈인 프론트 개발자입니다.
 
-## 기술 스택
+### 기술 스택
 HTML, CSS, jQuery
 
 javascript, typescript
 
 SPA(Vue, React)
 
-포트폴리오 보러가기
+##### [포트폴리오 보러가기](/portfolio)
 
-[https://freevuehub.github.io/portfolio](/portfolio)
-{: .notice}
-
-## 이력 및 경력
+### 이력 및 경력
 
 #### 2012 ~ 2016
 명지전문대 / 전기과 / 졸업
