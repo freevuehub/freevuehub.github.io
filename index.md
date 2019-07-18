@@ -10,7 +10,6 @@ layout: home
 * HTML, CSS, jQuery
 * javascript
 * Vue.js, React.js
-{: .notice_info}
 
 #### 2012 ~ 2016
 명지전문대 / 전기과 / 졸업
@@ -23,3 +22,4 @@ layout: home
 
 #### 2018.08.20 ~
 비마이카(뿅카) / 모빌리티 광고 / 주임 / 프론트 개발
+{: .notice_info}
