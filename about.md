@@ -3,12 +3,19 @@ layout: page
 permalink: /about/
 ---
 
+# About FreeVue
 앞으로 여러 세미나에 서서 발표하는 것이 꿈인 프론트 개발자입니다.
 
-* HTML, CSS, jQuery
-* javascript
-* Vue.js, React.js
-{: .notice_info}
+### 기술 스택
+HTML, CSS, jQuery
+
+javascript, typescript
+
+SPA(Vue, React)
+
+##### [포트폴리오 보러가기](/portfolio)
+
+### 이력 및 경력
 
 #### 2012 ~ 2016
 명지전문대 / 전기과 / 졸업
