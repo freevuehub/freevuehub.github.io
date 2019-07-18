@@ -1,5 +1,5 @@
 ---
-layout: portfolio
+layout: page
 title: Portfolio
 description: "Portfolio List"
 permalink: /portfolio.html
