@@ -16,7 +16,8 @@ layout: home
 
 `SPA(Vue, React)`
 
-[포트폴리오](/portfolio)
+포트폴리오 보러가기
+[https://freevuehub.github.io/portfolio](/portfolio)
 {: .notice}
 
 ## 이력 및 경력
