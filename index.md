@@ -9,6 +9,7 @@ layout: home
 앞으로 여러 세미나에 서서 발표하는 것이 꿈인 프론트 개발자입니다.
 
 ## 기술 스택
+
 `HTML, CSS, jQuery`
 
 `javascript, typescript`
