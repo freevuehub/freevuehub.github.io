@@ -9,55 +9,64 @@ comments: true
 <body id="posts" class="inner-post-page">
 
 <div class="block-left">
-    <div class="content">
-        <a href="{{ site.url }}" class="logo"><img src="{{ site.url }}/images/{{ site.logo }}"></a>
-        <div class="post-title-section">
-            <div class="section-line">Posts <em>/</em></div>
-            <h1 class="section-title">{{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}</h1>
-            <ul class="tags">
-                {% for tag in page.tags %}
-                <li><a href="{{ site.url }}/tags#{{ tag }}">{{ tag }}</a></li>
-                {% unless forloop.last %}
-                {% endunless %}
-                {% endfor %}
-            </ul>
-            <div class="section-line reverse"><a href="{{ site.url}}/posts">Back to posts</a> <em>/</em></div>
-        </div>
+  <div class="content">
+    <a href="{{ site.url }}" class="logo"><img src="{{ site.url }}/images/{{ site.logo }}"></a>
+    <div class="post-title-section">
+      <div class="section-line">Posts <em>/</em></div>
+      <h1 class="section-title">{{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}</h1>
+      <ul class="tags">
+        {% for tag in page.tags %}
+        <li><a href="{{ site.url }}/tags#{{ tag }}">{{ tag }}</a></li>
+        {% unless forloop.last %}
+        {% endunless %}
+        {% endfor %}
+      </ul>
+      <div class="section-line reverse"><a href="{{ site.url}}/posts">Back to posts</a> <em>/</em></div>
     </div>
+  </div>
 </div>
 
 <div class="block-right">
-    <!-- <div class="share-buttons">
-        {% include share.html %}
-    </div> -->
+  <!-- <div class="share-buttons">
+      {% include share.html %}
+  </div> -->
 
-    {% include menu-btn.html %}
-    <div class="inner-post content">
-        <div class="date-highlight">{% if page.date %}{{ page.date | date: '%d %b %Y' }}{% else %}&#x2756;{% endif %}</div>
+  {% include menu-btn.html %}
+  <div class="inner-post content">
+    <div class="date-highlight">{% if page.date %}{{ page.date | date: '%d %b %Y' }}{% else %}&#x2756;{% endif %}</div>
 
-        {{ content }}
-        <br>
+    {% include ad-squre.html %}
 
-        {% include share.html %}
+    <br>
 
-        <div id="disqus_thread"></div>
-        <script>
-            var disqus_config = function () {
-                this.page.url = '{{ site.url }}{{ page.url }}';
-                this.page.identifier = '{{ page.url }}';
-            };
+    {{ content }}
 
-            (function() {
-                var d = document, s = d.createElement('script');
-                s.src = 'https://https-freevuehub-github-io.disqus.com/embed.js';
-                s.setAttribute('data-timestamp', +new Date());
-                (d.head || d.body).appendChild(s);
-            })();
-        </script>
-        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <br>
 
-        {% include page-pagination.html %}
-    </div>
+    {% include ad-squre.html %}
+
+    <br>
+
+    {% include share.html %}
+
+    <div id="disqus_thread"></div>
+    <script>
+      var disqus_config = function () {
+        this.page.url = '{{ site.url }}{{ page.url }}';
+        this.page.identifier = '{{ page.url }}';
+      };
+
+      (function() {
+        var d = document, s = d.createElement('script');
+        s.src = 'https://https-freevuehub-github-io.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+    {% include page-pagination.html %}
+  </div>
 </div>
 {% include scripts.html %}
 {% include overlay.html %}
