@@ -34,9 +34,19 @@ comments: true
     {% include menu-btn.html %}
     <div class="inner-post content">
         <div class="date-highlight">{% if page.date %}{{ page.date | date: '%d %b %Y' }}{% else %}&#x2756;{% endif %}</div>
+        <amp-ad width="100vw" height=320
+                type="adsense"
+                data-ad-client="ca-pub-4182995337229754"
+                data-ad-slot="1881753300"
+                data-auto-format="rspv"
+                data-full-width>
+          <div overflow></div>
+        </amp-ad>
+
         {{ content }}
         <br>
 
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
         <!-- first -->
         <ins class="adsbygoogle"
              style="display:block"
