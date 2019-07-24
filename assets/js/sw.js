@@ -36,10 +36,8 @@ self.addEventListener('activate', (evt) => {
 self.addEventListener('fetch', (evt) => {
   console.log('[ServiceWorker] Fetch', evt.request.url);
 
-  if (evt.request.mode !== 'navigate') {
-    // Not a page navigation, bail.
-    return;
-  }
+  if (evt.request.mode !== 'navigate') return;
+
   evt.respondWith(
     fetch(evt.request)
       .catch(() => {
