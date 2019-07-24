@@ -1,5 +1,5 @@
-window.addEventListener('load', function() {
-	if ('serviceWorker' in navigator) {
-		navigator.serviceWorker.register('./sw.js');
-	}
+window.addEventListener('load', async () => {
+  if ('serviceWorker' in navigator) {
+    await navigator.serviceWorker.register('./sw.js');
+  }
 });
