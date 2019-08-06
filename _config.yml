@@ -2,7 +2,7 @@
 title: FreeVue
 description: FreeVue Github Blog
 url: https://freevuehub.github.io
-logo:                                       # Site logo
+logo:                                       # site.logo
     big: com/logo.png
     share: com/share-logo.png
 locale: ko_KR
