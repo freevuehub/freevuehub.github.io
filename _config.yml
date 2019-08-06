@@ -4,7 +4,7 @@ description: FreeVue Github Blog
 url: https://freevuehub.github.io
 logo:                                       # site.logo
     big: com/logo.png
-    share: com/share-logo.png
+    share: com/share-logo.jpg
 locale: ko_KR
 
 # Left Block Images
