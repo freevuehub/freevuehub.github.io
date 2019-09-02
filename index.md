@@ -13,7 +13,9 @@ javascript, typescript
 
 SPA(Vue, React)
 
-##### [포트폴리오 보러가기](/portfolio)
+<!-- ##### [포트폴리오 보러가기](/portfolio) -->
+
+![포트폴리오 보러가기]({{ site.url }}/download/portfolio.pdf)
 
 ### 이력 및 경력
 
