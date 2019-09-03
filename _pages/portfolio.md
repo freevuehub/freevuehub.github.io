@@ -9,10 +9,14 @@ permalink: /portfolio.html
 
 BHM-youthculture: [http://www.bhm-youthculture.co.kr/](http://www.bhm-youthculture.co.kr/)
 
+BHM-youthculture: [http://www.bhm-youthculture.co.kr/](http://www.bhm-youthculture.co.kr/)
+
 The North Face: [https://www.thenorthfacekorea.co.kr/](https://www.thenorthfacekorea.co.kr/)
 
 뿅카: [http://www.poppingcar.com/web/](http://www.poppingcar.com/web/)
 
 > ##토이 프로젝트
+
+Freevue-Korea: [https://freevue-korea.netlify.com/](https://freevue-korea.netlify.com/)
 
 Freevue-Korea: [https://freevue-korea.netlify.com/](https://freevue-korea.netlify.com/)
