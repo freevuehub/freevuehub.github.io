@@ -19,4 +19,4 @@ The North Face: [https://www.thenorthfacekorea.co.kr/](https://www.thenorthfacek
 
 Freevue-Korea: [https://freevue-korea.netlify.com/](https://freevue-korea.netlify.com/)
 
-Freevue-Korea: [https://freevue-korea.netlify.com/](https://freevue-korea.netlify.com/)
+Freevue-POP: [https://freevue-korea.netlify.com/](https://freevue-korea.netlify.com/)
