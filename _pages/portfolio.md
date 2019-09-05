@@ -7,7 +7,13 @@ permalink: /portfolio.html
 
 > ##참여 프로젝트
 
-BHM-youthculture: [http://www.bhm-youthculture.co.kr/](http://www.bhm-youthculture.co.kr/)
+셀트리온: [http://www.bhm-youthculture.co.kr/](http://www.bhm-youthculture.co.kr/)
+
+리스트: [http://www.bhm-youthculture.co.kr/](http://www.bhm-youthculture.co.kr/)
+
+쉬즈미스: [http://www.bhm-youthculture.co.kr/](http://www.bhm-youthculture.co.kr/)
+
+에스테덤: [http://www.bhm-youthculture.co.kr/](http://www.bhm-youthculture.co.kr/)
 
 BHM-youthculture: [http://www.bhm-youthculture.co.kr/](http://www.bhm-youthculture.co.kr/)
 
@@ -19,4 +25,4 @@ The North Face: [https://www.thenorthfacekorea.co.kr/](https://www.thenorthfacek
 
 Freevue-Korea: [https://freevue-korea.netlify.com/](https://freevue-korea.netlify.com/)
 
-Freevue-POP: [https://freevue-korea.netlify.com/](https://freevue-korea.netlify.com/)
+Freevue-POP: [https://freevue-pop.netlify.com/](https://freevue-pop.netlify.com/)
