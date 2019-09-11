@@ -11,9 +11,9 @@ permalink: /portfolio.html
 
 셀트리온: [http://www.bhm-youthculture.co.kr/](http://www.bhm-youthculture.co.kr/)
 
-리스트: [http://www.bhm-youthculture.co.kr/](http://www.bhm-youthculture.co.kr/)
+리스트: -
 
-쉬즈미스: [http://www.bhm-youthculture.co.kr/](http://www.bhm-youthculture.co.kr/)
+쉬즈미스: -
 
 에스테덤: [http://www.bhm-youthculture.co.kr/](http://www.bhm-youthculture.co.kr/)
 
