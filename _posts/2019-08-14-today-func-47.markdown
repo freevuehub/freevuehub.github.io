@@ -1,27 +1,29 @@
 ---
 layout: post
-title:  "flip"
-categories: [ Jekyll ]
+title: 'flip'
+categories: [Function]
+image: assets/images/function/47/carbon.png
+tag: [매일함수, flip, javascript]
 ---
 
 ```javascript
 // flip
 // Flip은 함수를 인수로 취한 다음 첫 번째 인수를 마지막으로 만듭니다.
-// 
+//
 // 가변 인수를받는 클로저를 반환하고 나머지 인수를 적용하기 전에 마지막 인수를 첫 번째 인수로 연결합니다.
 
-const flip = fn => (first, ...rest) => fn(...rest, first);
+const flip = (fn) => (first, ...rest) => fn(...rest, first)
 
 // 예시
-let a = { name: 'John Smith' };
-let b = {};
-const mergeFrom = flip(Object.assign);
-let mergePerson = mergeFrom.bind(null, a);
-mergePerson(b); // == b
-b = {};
-Object.assign(b, a); // == b
+let a = {name: 'John Smith'}
+let b = {}
+const mergeFrom = flip(Object.assign)
+let mergePerson = mergeFrom.bind(null, a)
+mergePerson(b) // == b
+b = {}
+Object.assign(b, a) // == b
 ```
 
-![예제 이미지 1]({{ site.baseurl }}/assets/images/function/47/carbon.png)
+<!-- ![예제 이미지 1]({{ site.baseurl }}/assets/images/function/47/carbon.png) -->
 
 [출처: [http://30.surge.sh/](http://30.surge.sh/)]

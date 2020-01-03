@@ -1,8 +1,9 @@
 ---
 layout: post
-title:  "2019년을 정리하며"
-categories: [ Jekyll ]
-tags: [summer]
+title: '2019년을 정리하며'
+categories: [Devlog]
+image: assets/images/share-logo.png
+tags: [Delog, 2019년, 회고]
 ---
 
 블로그에 8월 중순까지 열심히 관리했는데 오랜만에 남기는 글이 2019년을 정리하는 글입니다.
