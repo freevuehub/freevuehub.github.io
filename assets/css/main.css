@@ -2007,6 +2007,10 @@ pre code {
 }
 
 @media (max-width: 991.98px) {
+  .card-image {
+    display: none;
+  }
+
   .table-responsive-lg {
     display: block;
     width: 100%;
@@ -11209,8 +11213,13 @@ html {
   padding-left: 15px;
 }
 
+.card-image,
 .col-md-image {
-  width: 50%;
+  width: 40%;
+}
+
+.card-content {
+  flex: 1;
 }
 
 .col {

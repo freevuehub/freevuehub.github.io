@@ -1,0 +1,44 @@
+---
+layout: post
+title: '알고리즘 풀이'
+categories: [Algorithm]
+image: assets/images/function/0/20190415.png
+tag: [algorithm, javascript]
+---
+
+문제
+
+```
+정수 배열(int array)가 주어지면 가장 큰 이어지는 원소들의 합을 구하시오.
+단, 시간복잡도는 O(n).
+
+예제)
+Input: [-1, 3, -1, 5]
+Output: 7 // 3 + (-1) + 5
+
+Input: [-5, -3, -1]
+Output: -1 // -1
+
+Input: [2, 4, -2, -3, 8]
+Output: 9 // 2 + 4 + (-2) + (-3) + 8
+```
+
+풀이
+
+```javascript
+const output = (input) => {
+  let sum = input[0]
+
+  return input.reduce((prev, cur) => {
+    sum = Math.max(sum + cur, cur)
+
+    return Math.max(sum, prev)
+  })
+}
+
+output([-1, 3, -1, 5]) // 7
+output([-5, -3, -1]) // -1
+output([2, 4, -2, -3, 8]) // 9
+```
+
+[출처: [https://mailprogramming.com/](https://mailprogramming.com/)]

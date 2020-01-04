@@ -6,13 +6,8 @@ enabled: true
 description: "A great Jekyll theme developed by Sal @wowthemesnet."
 ---
 
-
 <div class="container">
-
   {% if page.url == "/" %}
-
-
-
   <!-- Begin post excerpts, let's highlight the first 4 posts on top -->
   <div class="row remove-site-content-margin">
     <!-- latest post -->
@@ -50,7 +45,6 @@ description: "A great Jekyll theme developed by Sal @wowthemesnet."
     </div>
 
     <div class="col-md-6">
-
       <!-- second latest post -->
       {%- assign second_post = site.posts[1] -%}
       <div class="mb-3 d-flex align-items-center">
@@ -162,7 +156,7 @@ description: "A great Jekyll theme developed by Sal @wowthemesnet."
           <a href="{{site.baseurl}}{{post.url}}" class="btn btn-dark">Read More</a>
         </div>
         <div class="col-md-6 d-none d-md-block pr-0"
-          style="background-size:cover;background-image:url({{site.baseurl}}/{{ post.image }});">
+          style="background-size:cover;background-image:url({{site.baseurl}}/{{ post.image }}); background-position: center;">
         </div>
       </div>
     </div>
