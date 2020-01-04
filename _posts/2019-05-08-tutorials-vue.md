@@ -1,15 +1,9 @@
 ---
 layout: post
-title:  "관찰자 v-model"
-date:   2019-05-08
-excerpt: "v-model와 watch"
-dev: true
-categories:
-- vue
-tag:
-- vue
-- javascript
-- state관리
+title: 'v-model'
+categories: [Tutorials]
+image: assets/images/function/0/20190415.png
+tag: [Vue.js, javascript]
 ---
 
 > ## v-model
@@ -29,9 +23,9 @@ v-model사용법을 알아보겠습니다.
 var App = new Vue({
   el: '#app',
   data: {
-    message: '안녕하세요.'
-  }
-});
+    message: '안녕하세요.',
+  },
+})
 </script>
 ```
 
@@ -43,18 +37,18 @@ input의 value는 data의 message가 됩니다.
 
 ```javascript
 var App = new Vue({
-    el: '#app',
+  el: '#app',
 
-    data: {
-        message: '안녕하세요.'
+  data: {
+    message: '안녕하세요.',
+  },
+
+  watch: {
+    message: function(v) {
+      console.log(v) // 안녕하세요.
     },
-
-    watch: {
-        message: function(v) {
-            console.log(v); // 안녕하세요.
-        }
-    }
-});
+  },
+})
 ```
 
 watch속성은 v-model의 변화값을 활용할 수 있는 속성입니다.

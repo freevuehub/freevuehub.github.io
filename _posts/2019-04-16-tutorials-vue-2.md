@@ -27,7 +27,7 @@ var App = new Vue({
 
 위와 같이 data에 placeholder에 넣었습니다. 결과는
 
-![결과 이미지 1]({{ site.url }}/images/vue/3/img1.jpg)
+![결과 이미지 1]({{ site.baseurl }}/assets/images/vue/3/img1.jpg)
 
 placeholder가 추가되었습니다. 이런 식으로 href, src등의 태그의 속성을 추가하고 수정할 수 있습니다.
 

@@ -10,7 +10,7 @@ tag: [Vue.js, javascript]
 
 아래의 사진을 보면 쉽게 이해될 겁니다.
 
-![결과 이미지 1]({{ site.url }}/images/vue/7/img1.png)
+![결과 이미지 1]({{ site.baseurl }}/assets/images/vue/7/img1.png)
 
 전부 활용하면 좋지만 주로 사용되는 부분들은 created, mounted, updated, destroyed 입니다.
 

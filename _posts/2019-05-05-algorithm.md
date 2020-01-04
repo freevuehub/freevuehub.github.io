@@ -19,7 +19,7 @@ tag: [algorithm, javascript]
 (단, 거슬러 가지는 않기로 합니다).
 ```
 
-![예제 이미지 1]({{ site.url }}/images/algorithm/20/ex.gif)
+![결과 이미지 1]({{ site.baseurl }}/assets/images/algorithm/20/ex.gif)
 
 #### 풀이
 

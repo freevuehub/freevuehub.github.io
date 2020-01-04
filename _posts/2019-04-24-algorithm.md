@@ -58,6 +58,6 @@ output(20) // 232792560
 
 #### 구조
 
-![결과 이미지 1]({{ site.url }}/images/algorithm/9/diagram.png)
+![결과 이미지 1]({{ site.baseurl }}/assets/images/algorithm/9/diagram.png)
 
 [출처: [http://euler.synap.co.kr/prob_detail.php?id=5](http://euler.synap.co.kr/prob_detail.php?id=5)]

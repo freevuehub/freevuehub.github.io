@@ -42,7 +42,7 @@ var App = new Vue({
 </script>
 ```
 
-![결과 이미지 1]({{ site.url }}/images/vue/2/img1.jpg)
+![결과 이미지 1]({{ site.baseurl }}/assets/images/vue/2/img1.jpg)
 
 저번과 다르게 이번에는 태그들이 텍스트가 아닌 태그로서 일을 잘 하고 있습니다.
 
@@ -82,7 +82,7 @@ var App = new Vue({
 
 그리고 <div id="app">태그를 위와 같이 수정했습니다. 그러면 결과는
 
-![결과 이미지 2]({{ site.url }}/images/vue/2/img2.jpg)
+![결과 이미지 2]({{ site.baseurl }}/assets/images/vue/2/img2.jpg)
 
 달라지는 것은 없습니다.
 

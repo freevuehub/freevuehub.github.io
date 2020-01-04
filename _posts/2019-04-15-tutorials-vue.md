@@ -39,7 +39,7 @@ tag: [Vue.js, javascript]
 
 위 코드로 작성을 하면 아래와 같은 결과를 얻을 수 있습니다.
 
-![결과 이미지 1]({{ site.url }}/images/vue/1/img1.png)
+![결과 이미지 1]({{ site.baseurl }}/assets/images/vue/1/img1.png)
 
 코드를 분석해보면
 
@@ -98,7 +98,7 @@ var App = new Vue({
 })
 ```
 
-![결과 이미지 2]({{ site.url }}/images/vue/1/img2.png)
+![결과 이미지 2]({{ site.baseurl }}/assets/images/vue/1/img2.png)
 
 이미지처럼 태그가 문자로 들어갑니다. 만약 태그로 한번 더 감싸고 싶으면
 
@@ -110,7 +110,7 @@ var App = new Vue({
 
 이렇게 {{ message }}부분을 원하시는 태그로 한번 더 감싸면 원하는 결과가 나옵니다.
 
-![결과 이미지 3]({{ site.url }}/images/vue/1/img3.png)
+![결과 이미지 3]({{ site.baseurl }}/assets/images/vue/1/img3.png)
 
 또 다르게 응용을 해보겠습니다.
 
@@ -138,7 +138,7 @@ var App = new Vue({
 
 '<div id="app">'에 message를 받아오는 부분을 '<p>'태그를 이용하여 추가했습니다.
 
-![결과 이미지 4]({{ site.url }}/images/vue/1/img4.png)
+![결과 이미지 4]({{ site.baseurl }}/assets/images/vue/1/img4.png)
 
 이런 식으로 응용할 수 있습니다.
 
