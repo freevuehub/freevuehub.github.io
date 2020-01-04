@@ -1,18 +1,13 @@
 ---
 layout: post
-title:  "매일 알고리즘"
-date:   2019-04-18
-excerpt: "매일 알고리즘 - 3"
-algorithm: true
-categories:
-- Today Algorithm
-tag:
-- 매일알고리즘
-- javascript
-- 알고리즘
+title: '알고리즘 풀이'
+categories: [Algorithm]
+image: assets/images/function/0/20190415.png
+tag: [algorithm, javascript]
 ---
 
 문제
+
 ```
 정수 배열과 정수 k가 주어지면 모든 원소를 k칸씩 앞으로 옮기시오.
 시간복잡도를 최대한 최적화 하시오.
@@ -25,11 +20,12 @@ output: [1, 2, 3, 4, 0]
 ```
 
 풀이
-```javascript
-const output = (input, k = 0) => [...input.slice(k), ...input.slice(0, k)];
 
-output([1, 2, 3, 4, 5], 2); // [3, 4, 5, 1, 2]
-output([0, 1, 2, 3, 4], 1); // [1, 2, 3, 4, 0]
+```javascript
+const output = (input, k = 0) => [...input.slice(k), ...input.slice(0, k)]
+
+output([1, 2, 3, 4, 5], 2) // [3, 4, 5, 1, 2]
+output([0, 1, 2, 3, 4], 1) // [1, 2, 3, 4, 0]
 ```
 
 [출처: [https://mailprogramming.com/](https://mailprogramming.com/)]

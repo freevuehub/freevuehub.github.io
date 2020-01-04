@@ -1,28 +1,22 @@
 ---
 layout: post
-title:  "반복 렌더링(v-for)"
-date:   2019-04-18
-excerpt: "반복 렌더링"
-dev: true
-categories:
-- vue
-tag:
-- vue
-- javascript
-- v-for
+title: 'v-for'
+categories: [Tutorials]
+image: assets/images/function/0/20190415.png
+tag: [Vue.js, javascript]
 ---
 
 v-for의 경우는 태그를 반복적으로 생성할 때 사용합니다.
 
 ```javascript
-var model = [0, 1, 2, 3];
+var model = [0, 1, 2, 3]
 
 var App = new Vue({
   el: '#app',
   data: {
-    list: model
-  }
-});
+    list: model,
+  },
+})
 ```
 
 스크립트의 경우는 model을 배열로 작성하고, data의 list에 추가했습니다.
@@ -55,11 +49,11 @@ var App = new Vue({
 
 ```javascript
 var model = [
-  { num : 0, string : '가' },
-  { num : 1, string : '나' },
-  { num : 2, string : '다' },
-  { num : 3, string : '라' }
-];
+  {num: 0, string: '가'},
+  {num: 1, string: '나'},
+  {num: 2, string: '다'},
+  {num: 3, string: '라'},
+]
 ```
 
 만약 배열안에 Object로 있다하면 :key값에 Object가 들어갈 수 없기 때문에
@@ -90,7 +84,6 @@ index는 0부터 시작을 하고, 숫자입니다.
 
 좀 더 응용을 해서 조건 렌더링과 같이 사용해 보겠습니다.
 
-
 ```vue
 <li v-for="(c, index) in list" :key="index" v-if="c.num !== 2">{{ c.string }}</li>
 ```
@@ -110,6 +103,7 @@ index는 0부터 시작을 하고, 숫자입니다.
   <h1>{{ c.num }}입니다.</h1>
 </li>
 ```
+
 이런 식으로 index값을 활용할 수도 있고, 반복되는 태그안에 있는 태그들이 있다면 그 태그들도 반복적으로 생성을 합니다.
 
 ![결과 이미지 5]({{ site.url }}/images/vue/5/img5.png)
@@ -126,18 +120,18 @@ index는 0부터 시작을 하고, 숫자입니다.
 </div>
 
 <script>
-  var model = [
-    { num : 0, string : '가' },
-    { num : 1, string : '나' },
-    { num : 2, string : '다' },
-    { num : 3, string : '라' }
-  ];
+var model = [
+  {num: 0, string: '가'},
+  {num: 1, string: '나'},
+  {num: 2, string: '다'},
+  {num: 3, string: '라'},
+]
 
-  var App = new Vue({
-    el: '#app',
-    data: {
-      list: model
-    }
-  });
+var App = new Vue({
+  el: '#app',
+  data: {
+    list: model,
+  },
+})
 </script>
 ```

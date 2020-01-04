@@ -1,16 +1,9 @@
 ---
 layout: post
-title:  "조건 렌더링 (v-show, v-if)"
-date:   2019-04-17
-excerpt: "조건 렌더링"
-dev: true
-categories:
-- vue
-tag:
-- vue
-- javascript
-- v-show
-- v-if
+title: 'v-show, v-if'
+categories: [Tutorials]
+image: assets/images/function/0/20190415.png
+tag: [Vue.js, javascript]
 ---
 
 이전 포스팅은 텍스트를 View단에 그리는 기능들을 봤습니다. 이번에는 좀 더 개발적인 느낌이 나는 기능들을 소개해보겠습니다.
@@ -54,14 +47,14 @@ v-show안에 값을 true에서 false로 바꿨습니다. 그러면 아래 사진
 위와 같이 'show'라는 문자열이 view와 같은지 비교하는 조금 더 복잡한 조건을 걸었습니다. 그리고 script부분도 수정해보겠습니다.
 
 ```javascript
-var model = 'show';
+var model = 'show'
 
 var App = new Vue({
   el: '#app',
   data: {
-    view: model
-  }
-});
+    view: model,
+  },
+})
 ```
 
 model에 'show'라는 string을 지정하고, model을 data의 view에 추가했습니다.
@@ -106,7 +99,7 @@ v-if는 v-show랑 기능이 같습니다. 조건이 true이면 보여주고 아�
 
 ![결과 이미지 5]({{ site.url }}/images/vue/4/img5.png)
 
-사진처럼 v-if의 경우는 v-show와 다르게 태그를 생성하지 않습니다. 이 차이점은  매우 중요합니다.
+사진처럼 v-if의 경우는 v-show와 다르게 태그를 생성하지 않습니다. 이 차이점은 매우 중요합니다.
 
 그리고 추가적인 기능으로
 
