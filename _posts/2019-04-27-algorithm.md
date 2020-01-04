@@ -1,22 +1,13 @@
 ---
 layout: post
-title:  "매일 알고리즘"
-date:   2019-04-27
-excerpt: "매일 알고리즘 - 12"
-algorithm: true
-comments: true
-categories:
-- Today Algorithm
-tag:
-- 매일알고리즘
-- javascript
-- 알고리즘
+title: '알고리즘 풀이'
+categories: [Algorithm]
+image: assets/images/function/0/20190415.png
+tag: [algorithm, javascript]
 ---
 
-* 기존 문제에서 원하는 단순한 정답보다 함수를 활용하고 있습니다.
-* 매개변수로 대응이 가능한 풀이를 작성하고 있습니다.
-
 #### 문제
+
 ```
 다음은 연속된 1000자리 숫자입니다.
 
@@ -51,29 +42,31 @@ output 5832 // 9 * 9 * 8 * 9 = 5832
 ```
 
 #### 풀이
+
 ```javascript
-const n = '...'; // 위 1000자리의 숫자를 Number로 선언하면 Infinity를 반환하여 String로 선언합니다.
-const output = input => {
-  let out = 0; // 최종 out을 출력할 변수 선언
+const n = '...' // 위 1000자리의 숫자를 Number로 선언하면 Infinity를 반환하여 String로 선언합니다.
+const output = (input) => {
+  let out = 0 // 최종 out을 출력할 변수 선언
 
   // input자리 수만큼 1자리씩 이동하며 반복
   for (let c = 0; c < n.length - input; c++) {
-    
-    // input자리 수를 생성 후 모든 자리 수의 곱 
-    const multiple = n.substr(c, input).split('').reduce(
-      (prev, cur) => parseFloat(prev) * parseFloat(cur)
-    );
-    
+    // input자리 수를 생성 후 모든 자리 수의 곱
+    const multiple = n
+      .substr(c, input)
+      .split('')
+      .reduce((prev, cur) => parseFloat(prev) * parseFloat(cur))
+
     // 기존의 out과 비교하며 최대값을 출력
-    out = Math.max(out, multiple);
+    out = Math.max(out, multiple)
   }
 
   // out 출력
-  return out;
+  return out
 }
 ```
 
 #### 구조
-![결과 이미지 1]({{ site.url }}/images/algorithm/12/diagram.png)
+
+![결과 이미지 1]({{ site.baseurl }}/assets/images/algorithm/12/diagram.png)
 
 [출처: [http://euler.synap.co.kr/prob_detail.php?id=8](http://euler.synap.co.kr/prob_detail.php?id=8)]

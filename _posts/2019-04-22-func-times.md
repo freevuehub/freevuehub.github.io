@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'curry'
+title: 'times'
 categories: [Function]
 image: assets/images/function/6/carbon.png
 tag: [매일함수, times, javascript]

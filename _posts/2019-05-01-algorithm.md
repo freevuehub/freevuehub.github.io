@@ -1,22 +1,13 @@
 ---
 layout: post
-title:  "매일 알고리즘"
-date:   2019-05-01
-excerpt: "매일 알고리즘 - 16"
-algorithm: false
-comments: true
-categories:
-- Today Algorithm
-tag:
-- 매일알고리즘
-- javascript
-- 알고리즘
+title: '알고리즘 풀이'
+categories: [Algorithm]
+image: assets/images/function/0/20190415.png
+tag: [algorithm, javascript]
 ---
 
-* 기존 문제에서 원하는 단순한 정답보다 함수를 활용하고 있습니다.
-* 매개변수로 대응이 가능한 풀이를 작성하고 있습니다.
-
 #### 문제
+
 ```
 다음과 같이 삼각형 모양으로 숫자를 배열했습니다.
 
@@ -49,10 +40,12 @@ tag:
 ```
 
 #### 풀이
+
 ```javascript
 ```
 
 #### 구조
-<!-- ![결과 이미지 1]({{ site.url }}/images/algorithm/11/diagram.png) -->
+
+<!-- ![결과 이미지 1]({{ site.baseurl }}/assets/images/algorithm/14/diagram.png) -->
 
 [출처: [http://euler.synap.co.kr/prob_detail.php?id=18](http://euler.synap.co.kr/prob_detail.php?id=18)]

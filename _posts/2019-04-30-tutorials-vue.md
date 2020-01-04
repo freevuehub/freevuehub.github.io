@@ -1,23 +1,10 @@
 ---
 layout: post
-title:  "data, this"
-date:   2019-04-30
-excerpt: "state(data)관리와 this"
-dev: true
-categories:
-- vue
-tag:
-- vue
-- javascript
-- state관리
---- 
-
-Vue의 특징을 소개해보겠습니다.
-
-* MVVM패턴입니다.
-* State(data)관리가 굉장히 쉽습니다.
-* template을 지원해 관리하기 편합니다.
-* Vue-cli를 지원합니다.
+title: 'state, this'
+categories: [Tutorials]
+image: assets/images/function/0/20190415.png
+tag: [Vue.js, javascript]
+---
 
 > ## state관리와 this
 
@@ -25,11 +12,11 @@ Vue에서 state는 data입니다.
 
 ```javascript
 var App = new Vue({
-  el : '#app',
-  data : {
+  el: '#app',
+  data: {
     // 이 부분이 state이자 data
-  }
-});
+  },
+})
 ```
 
 Vue의 data는 변수처럼 변경이 가능합니다.
@@ -38,15 +25,15 @@ Vue의 data는 변수처럼 변경이 가능합니다.
 var App = new Vue({
   el: '#app',
   data: {
-    model: 'Vue.js' // model -> 'Vue.js'
+    model: 'Vue.js', // model -> 'Vue.js'
   },
   created() {
-    this.model = 'Hello Vue.js'; // model -> 'Hello Vue.js'
+    this.model = 'Hello Vue.js' // model -> 'Hello Vue.js'
   },
   mounted() {
-    this.model = 'Change Vue.js'; // model -> 'Change Vue.js'
-  }
-});
+    this.model = 'Change Vue.js' // model -> 'Change Vue.js'
+  },
+})
 ```
 
 data들을 this를 이용해서 불러오고 변수처럼 수정을 할 수 있습니다.
@@ -69,7 +56,7 @@ h1 {
   text-align: center;
   font-size: 20px;
   margin-bottom: 20px;
-  border-bottom:2px solid #000;
+  border-bottom: 2px solid #000;
 }
 p {
   font-size: 15px;
@@ -87,6 +74,7 @@ a {
   border-radius: 10px;
 }
 ```
+
 ```html
 <div id="app">
   <h1>{{ title }}</h1>
@@ -94,6 +82,7 @@ a {
   <a href="#" @click.prevent="changeDate()">Click!</a>
 </div>
 ```
+
 우선 html을 작성해서 모양을 잡았습니다.
 
 스크립트를 추가하는데 data는 총 두개가 들어갈 예정입니다.
@@ -103,14 +92,12 @@ var App = new Vue({
   el: '#app',
   data: {
     title: 'Instance 생성',
-    show: false
+    show: false,
   },
   methods: {
-    changeDate() {
-        
-    }
-  }
-});
+    changeDate() {},
+  },
+})
 ```
 
 결과를 확인해보겠습니다.
@@ -124,17 +111,17 @@ var App = new Vue({
   el: '#app',
   data: {
     title: 'Instance 생성',
-    show: false
+    show: false,
   },
   updated() {
-    this.title = 'Data 업데이트!!!!';
+    this.title = 'Data 업데이트!!!!'
   },
   methods: {
     changeDate() {
-      this.show = true;
-    }
-  }
-});
+      this.show = true
+    },
+  },
+})
 ```
 
 methods안에 있는 changeDate()가 실행이 되면서 `this.show = true`부분을 통해서 show가 true가 됬었습니다.

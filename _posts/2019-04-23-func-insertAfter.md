@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'curry'
+title: 'insertAfter'
 categories: [Function]
 image: assets/images/function/8/carbon.png
 tag: [매일함수, insertAfter, javascript]

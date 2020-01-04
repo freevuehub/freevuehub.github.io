@@ -1,0 +1,43 @@
+---
+layout: post
+title: '알고리즘 풀이'
+categories: [Algorithm]
+image: assets/images/function/0/20190415.png
+tag: [algorithm, javascript]
+---
+
+#### 문제
+
+```
+1 ~ n까지 자연수에 대해 합의 제곱과 제곱의 합의 차는?
+
+input: n = 10
+ouput: 2640 // 3025 - 385 = 2640
+```
+
+#### 풀이
+
+```javascript
+const output = (input) => {
+  let n1 = (n2 = 0) // 제곱의 합과 합의 제곱을 담을 변수
+
+  // 1부터 input까지의 1씩 더하는 반복문
+  for (let i = 1; i <= input; i++) {
+    n1 += i * i // 1부터 input까지 제곱의 합
+    n2 += i // 1부터 input까지 합
+  }
+
+  // 단순한 합을 제곱하고 나온 결과에 제곱의 합을 뺍니다.
+  return n2 * n2 - n1
+}
+
+output(10) // 2640
+output(100) // 25164150
+output(1000) // 250166416500
+```
+
+#### 구조
+
+![결과 이미지 1]({{ site.baseurl }}/assets/images/algorithm/10/diagram.png)
+
+[출처: [http://euler.synap.co.kr/prob_detail.php?id=6](http://euler.synap.co.kr/prob_detail.php?id=6)]

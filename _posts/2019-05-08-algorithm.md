@@ -1,22 +1,13 @@
 ---
 layout: post
-title:  "매일 알고리즘"
-date:   2019-05-08
-excerpt: "매일 알고리즘 - 23"
-algorithm: false
-comments: true
-categories:
-- Today Algorithm
-tag:
-- 매일알고리즘
-- javascript
-- 알고리즘
+title: '알고리즘 풀이'
+categories: [Algorithm]
+image: assets/images/function/0/20190415.png
+tag: [algorithm, javascript]
 ---
 
-* 기존 문제에서 원하는 단순한 정답보다 함수를 활용하고 있습니다.
-* 매개변수로 대응이 가능한 풀이를 작성하고 있습니다.
-
 #### 문제
+
 ```
 n! 이라는 표기법은 n × (n − 1) × ... × 3 × 2 × 1을 뜻합니다.
 
@@ -27,10 +18,10 @@ n! 이라는 표기법은 n × (n − 1) × ... × 3 × 2 × 1을 뜻합니다.
 ```
 
 #### 풀이
+
 ```javascript
 ```
 
 #### 구조
-<!-- ![결과 이미지 1]({{ site.url }}/images/algorithm/11/diagram.png) -->
 
 [출처: [http://euler.synap.co.kr/prob_detail.php?id=17](http://euler.synap.co.kr/prob_detail.php?id=17)]
