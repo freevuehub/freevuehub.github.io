@@ -1,14 +1,9 @@
 ---
 layout: post
-title:  "style"
-date:   2019-08-06
-excerpt: "Vue의 style 지원"
-dev: false
-categories:
-- vue
-tag:
-- vue
-- style
+title: 'Vue의 style 지원'
+categories: [Tutorials]
+image: assets/images/function/0/20190415.png
+tag: [Vue.js, javascript]
 ---
 
 Style을 적용하는 방법은 다양합니다. 단순 CSS를 이용하는 방법도 있고 SASS나 LESS로 조금 더 쉽게 작성하는 방법을 사용할 수도 있습니다. 작성을 하다 보면 모두 공통점이 있는데 그 중 하나가 중복해서 작성하지 않으려고 노력하는 점입니다.
@@ -18,19 +13,19 @@ Vue는 주로 Component로 부분 부분을 나누어 관리합니다. 이 점�
 ```vue
 <template>
   <div class="inner">
-    여기는 DOM입니다.  
+    여기는 DOM입니다.
   </div>
 </template>
 
 <script>
-  export default {
-    // ...
-  }
+export default {
+  // ...
+}
 </script>
 
 <style>
-  .inner {
-    // ...
-  }
+.inner {
+  // ...
+}
 </style>
-```  
+```

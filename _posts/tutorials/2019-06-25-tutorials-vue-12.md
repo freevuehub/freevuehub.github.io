@@ -1,15 +1,9 @@
 ---
 layout: post
-title: '.vue'
-date: 2019-06-25
-excerpt: '구조와 .vue 파일'
-dev: true
-categories:
-  - vue
-tag:
-  - vue
-  - javascript
-  - 디렉터리 구조
+title: '구조와 .vue 파일'
+categories: [Tutorials]
+image: assets/images/function/0/20190415.png
+tag: [Vue.js, javascript]
 ---
 
 ![결과 이미지 1]({{ site.baseurl }}/assets/images/vue/12/img1.jpg)

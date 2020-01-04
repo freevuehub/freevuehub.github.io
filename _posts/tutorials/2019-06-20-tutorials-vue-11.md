@@ -1,15 +1,9 @@
 ---
 layout: post
-title: 'vue-cli'
-date: 2019-06-20
-excerpt: 'vue-cli 살펴보기'
-dev: true
-categories:
-  - vue
-tag:
-  - vue
-  - javascript
-  - cli
+title: 'vue-cli 살펴보기'
+categories: [Tutorials]
+image: assets/images/function/0/20190415.png
+tag: [Vue.js, javascript]
 ---
 
 현재 소개하는 글은 vue-cli 버전이 3.x 대입니다.
