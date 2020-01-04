@@ -1,14 +1,9 @@
 ---
 layout: post
-title:  "라이프사이클"
-date:   2019-04-21
-excerpt: "라이프사이클"
-dev: true
-categories:
-- vue
-tag:
-- vue
-- javascript
+title: '라이프사이클'
+categories: [Tutorials]
+image: assets/images/function/0/20190415.png
+tag: [Vue.js, javascript]
 ---
 
 라이프사이클이란 Vue가 선언되서 인스턴스가 생성되고 나갈때 까지의 단계들입니다.
@@ -21,10 +16,10 @@ tag:
 
 하나씩 설명하면
 
-* created:  인스턴스가 생성이 되면 작동됩니다.
-* mounted:  DOM이 그려지면 작동됩니다.
-* updated:  data가 변경이 되고 나서 작동이 됩니다.
-* destroyed:  Vue인스턴스를 나가면 작동이 됩니다.
+- created: 인스턴스가 생성이 되면 작동됩니다.
+- mounted: DOM이 그려지면 작동됩니다.
+- updated: data가 변경이 되고 나서 작동이 됩니다.
+- destroyed: Vue인스턴스를 나가면 작동이 됩니다.
 
 각각의 before들은 그 이전에 작동이 됩니다.
 
@@ -59,8 +54,8 @@ var App = new Vue({
   },
   destroyed: {
     // 인스턴스 해제 후 (컴포넌트 제거 )
-  }
-});
+  },
+})
 ```
 
 이렇게 순서대로 실행이 됩니다. 꼭 다 사용할 필요는 없고 필요한 부분만 골라서 사용하면 됩니다.

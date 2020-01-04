@@ -1,19 +1,13 @@
 ---
 layout: post
-title:  "매일 알고리즘"
-date:   2019-04-23
-excerpt: "매일 알고리즘 - 8"
-algorithm: true
-comments: true
-categories:
-- Today Algorithm
-tag:
-- 매일알고리즘
-- javascript
-- 알고리즘
+title: '알고리즘 풀이'
+categories: [Algorithm]
+image: assets/images/function/0/20190415.png
+tag: [algorithm, javascript]
 ---
 
 문제
+
 ```
 앞에서부터 읽을 때나 뒤에서부터 읽을 때나 모양이 같은 수를
 대칭수(palindrome)라고 부릅니다.
@@ -25,36 +19,41 @@ ouput: 9009 // 91 × 99 = 9009
 ```
 
 풀이
+
 ```javascript
 // 대칭수 구하기
-const output = input => {
-  const max = (val = 9) => (`${val}`.length !== input) ? max(parseFloat(`${val}9`)) : val; // n 자리 수의 최대값
-  const min = (val = 9) => (`${val}`.length !== input) ? min(val * 10) : val; // n 자리 수의 최소값 (최대값을 구하기 떄문에 앞자리를 9로 두었습니다.)
+const output = (input) => {
+  const max = (val = 9) => (`${val}`.length !== input ? max(parseFloat(`${val}9`)) : val) // n 자리 수의 최대값
+  const min = (val = 9) => (`${val}`.length !== input ? min(val * 10) : val) // n 자리 수의 최소값 (최대값을 구하기 떄문에 앞자리를 9로 두었습니다.)
 
   // 최종 대칭수를 담을 변수
   // 1자리의 수로 설정을 했을 경우 9가 되대값이 됩니다.
-  let out = 9;
-
+  let out = 9
 
   // n자리 수의 두 수를 구하는 반복문
   for (let i = min(); i <= max(); i++) {
     for (let l = min(); l <= max(); l++) {
-
       // 두 수의 곱과 곱의 결과를 뒤집은 수 비교
       // Javascript의 type Number는 String의 메소드를 사용할 수 없어 String으로 작성하여 비교합니다.
-      if (`${i * l}` === `${i * l}`.split('').reverse().join('')) {
-          out = i * l;
+      if (
+        `${i * l}` ===
+        `${i * l}`
+          .split('')
+          .reverse()
+          .join('')
+      ) {
+        out = i * l
       }
     }
   }
 
   // 대칭수 출력
-  return out;
-};
+  return out
+}
 
-output(1); // 9
-output(2); // 9009
-output(3); // 906609
+output(1) // 9
+output(2) // 9009
+output(3) // 906609
 ```
 
 [출처: [http://euler.synap.co.kr/prob_detail.php?id=4](http://euler.synap.co.kr/prob_detail.php?id=4)]

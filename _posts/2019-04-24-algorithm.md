@@ -1,22 +1,13 @@
 ---
 layout: post
-title:  "매일 알고리즘"
-date:   2019-04-24
-excerpt: "매일 알고리즘 - 9"
-algorithm: true
-comments: true
-categories:
-- Today Algorithm
-tag:
-- 매일알고리즘
-- javascript
-- 알고리즘
+title: '알고리즘 풀이'
+categories: [Algorithm]
+image: assets/images/function/0/20190415.png
+tag: [algorithm, javascript]
 ---
 
-* 기존 문제에서 원하는 단순한 정답보다 함수를 활용하고 있습니다.
-* 매개변수로 대응이 가능한 풀이를 작성하고 있습니다.
-
 #### 문제
+
 ```
 자연수 1 ~ n 사이의 어떤 수로도 나누어 떨어지는 가장 작은 수는?
 
@@ -25,46 +16,48 @@ ouput: 2520
 ```
 
 #### 풀이
+
 ```javascript
 // 최소공배수를 구하는 문제입니다.
-const output = input => {
-  const max = input; // input값을 고정
-  const gcd = (n1, n2) => { // 최대공약수를 구하는 함수
-    let num = 1, out = num; // 최대공약수와 비교할 수를 담을 변수
+const output = (input) => {
+  const max = input // input값을 고정
+  const gcd = (n1, n2) => {
+    // 최대공약수를 구하는 함수
+    let num = 1,
+      out = num // 최대공약수와 비교할 수를 담을 변수
 
     // 최대공약수 구하는 반복문
     // 비교할 두 수들 중 작은 값까지만 비교합니다.
     while (num <= Math.min(n1, n2)) {
-
       // 약수들을 변수에 담고 최종적으로 최대공약수만 남깁니다.
-      if (!(n1 % num) && !(n2 % num)) out = num;
+      if (!(n1 % num) && !(n2 % num)) out = num
 
       // 비교할 수를 1씩 더해서 비교합니다.
-      num++;
+      num++
     }
 
     // 최대공약수 출력
-    return out;
-  };
+    return out
+  }
 
   // input까지의 자연수들의 최소공배수를 구하기 위한 반복문
   for (let i = 2; i <= max; i++) {
-
     // 최소공배수를 구하는 공식은 비교할 두 수의 곱에 최대공약수로 나누면 됩니다.
     // max까지 1씩 늘어나는 i와 이전에 나온 최소공배수를 비교합니다.
-    input = input * i / gcd(input, i);
+    input = (input * i) / gcd(input, i)
   }
 
   // 최소공배수를 출력
-  return input;
-};
+  return input
+}
 
-output(6); // 60
-output(10); // 2520
-output(20); // 232792560
+output(6) // 60
+output(10) // 2520
+output(20) // 232792560
 ```
 
 #### 구조
+
 ![결과 이미지 1]({{ site.url }}/images/algorithm/9/diagram.png)
 
 [출처: [http://euler.synap.co.kr/prob_detail.php?id=5](http://euler.synap.co.kr/prob_detail.php?id=5)]

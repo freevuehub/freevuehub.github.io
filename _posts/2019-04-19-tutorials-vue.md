@@ -1,30 +1,21 @@
 ---
 layout: post
-title:  "이벤트 핸들링(v-on)"
-date:   2019-04-19
-excerpt: "이벤트 핸들링"
-dev: true
-categories:
-- vue
-tag:
-- vue
-- javascript
-- v-on
+title: 'v-on'
+categories: [Tutorials]
+image: assets/images/function/0/20190415.png
+tag: [Vue.js, javascript]
 ---
 
 > ## methods
 
 작성법
+
 ```javascript
 var App = new Vue({
   el: '#app',
-  data: {
-    
-  },
-  methods: {
-    
-  }
-});
+  data: {},
+  methods: {},
+})
 ```
 
 methods말고도 watch, computed등 더 추가할 수 있으나 그 부분은 다음 포스팅에 소개해보겠습니다.
@@ -46,15 +37,13 @@ v-on은 이벤트를 사용할 때 필요합니다.
 ```javascript
 var App = new Vue({
   el: '#app',
-  data: {
-  
-  },
+  data: {},
   methods: {
     clickEvent: function() {
-      console.log('Click! Hello FreeVue Blog!'); // 'Click! Hello FreeVue Blog!'
-    }
-  }
-});
+      console.log('Click! Hello FreeVue Blog!') // 'Click! Hello FreeVue Blog!'
+    },
+  },
+})
 ```
 
 위 소스처럼 methods안에 v-on에 지정한 이름으로 함수를 만들어 주어야 작동을 합니다. 이렇게 작성을 하고 실행을 시키면 브라우저 console 창에 원하는 결과를 볼 수 있습니다.
@@ -64,15 +53,14 @@ var App = new Vue({
 ```javascript
 var App = new Vue({
   el: '#app',
-  data: {
-  
-  },
+  data: {},
   methods: {
     clickEvent: function(event) {
-      console.log('Click! Hello', event.target.tagName); 'Click! Hello DIV'
-    }
-  }
-});
+      console.log('Click! Hello', event.target.tagName)
+      ;('Click! Hello DIV')
+    },
+  },
+})
 ```
 
 이런 식으로 event를 추가해서 사용할 수 있습니다.
@@ -90,15 +78,13 @@ var App = new Vue({
 ```javascript
 var App = new Vue({
   el: '#app',
-  data: {
-  
-  },
+  data: {},
   methods: {
     clickEvent: function(text) {
-      console.log('Click! Hello', text); // 'Click! Hello Vue.js'
-    }
-  }
-});
+      console.log('Click! Hello', text) // 'Click! Hello Vue.js'
+    },
+  },
+})
 ```
 
 methods부분에서 매개변수로 받아올 수 있습니다.
@@ -112,17 +98,15 @@ methods부분에서 매개변수로 받아올 수 있습니다.
 ```javascript
 var App = new Vue({
   el: '#app',
-  data: {
-  
-  },
+  data: {},
   methods: {
     clickEvent: function(event) {
-      event.preventDefault();
+      event.preventDefault()
 
-      console.log('Click! Hello FreeVue Blog!');
-    }
-  }
-});
+      console.log('Click! Hello FreeVue Blog!')
+    },
+  },
+})
 ```
 
 하지만 위에 소개한 매개변수랑 같이 이용할 때에는 조금 복잡해집니다.
@@ -133,7 +117,7 @@ var App = new Vue({
 </div>
 ```
 
-이런 식으로 $event를 추가로 작성을 해야 event부분을 사용할 수 있습니다.
+이런 식으로 \$event를 추가로 작성을 해야 event부분을 사용할 수 있습니다.
 
 그런데 Vue.js에서 지원해주는 이벤트 수식어를 이용하면 편합니다.
 
