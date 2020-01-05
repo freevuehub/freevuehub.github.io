@@ -40,10 +40,10 @@ var App = new Vue({
 ![결과 이미지 1]({{ site.baseurl }}/assets/images/vue/5/img1.png)
 
 ```vue
-<li v-for="c in list" :key="c">{{ c }}</li>
+<li v-for="c in list" :key="c">{% raw %}{{ c }}{% endraw %}</li>
 ```
 
-이렇게 콧수염식으로 {{ c }}를 넣으면 list의 데이터들을 순차적으로 보여지게 할 수 있습니다.
+이렇게 콧수염식으로 \{\{ c \}\}를 넣으면 list의 데이터들을 순차적으로 보여지게 할 수 있습니다.
 
 ![결과 이미지 2]({{ site.baseurl }}/assets/images/vue/5/img2.png)
 
@@ -59,23 +59,23 @@ var model = [
 만약 배열안에 Object로 있다하면 :key값에 Object가 들어갈 수 없기 때문에
 
 ```vue
-<li v-for="c in list" :key="c.num">{{ c }}</li>
+<li v-for="c in list" :key="c.num">{% raw %}{{ c }}{% endraw %}</li>
 ```
 
 이런식으로 데이터를 타고 들어가서 넣어주는 방법도 있지만, 또 다른 방법으로
 
 ```vue
-<li v-for="(c, index) in list" :key="index">{{ c }}</li>
+<li v-for="(c, index) in list" :key="index">{% raw %}{{ c }}{% endraw %}</li>
 ```
 
 이렇게 index를 사용하는 방법도 있는데 index의 경우는 각 데이터의 순서입니다.
 
 index는 0부터 시작을 하고, 숫자입니다.
 
-이렇게 해서 {{ c }}를 표현을 하면은 Object가 그대로 그려집니다. 만약 Object안에 string을 보여주고 싶으면
+이렇게 해서 \{\{ c \}\}를 표현을 하면은 Object가 그대로 그려집니다. 만약 Object안에 string을 보여주고 싶으면
 
 ```vue
-<li v-for="(c, index) in list" :key="index">{{ c.string }}</li>
+<li v-for="(c, index) in list" :key="index">{% raw %}{{ c.string }}{% endraw %}</li>
 ```
 
 이렇게 콧수염식 안에서 데이터를 타고 들어가면 원하는 결과를 얻을 수 있습니다.
@@ -85,7 +85,11 @@ index는 0부터 시작을 하고, 숫자입니다.
 좀 더 응용을 해서 조건 렌더링과 같이 사용해 보겠습니다.
 
 ```vue
-<li v-for="(c, index) in list" :key="index" v-if="c.num !== 2">{{ c.string }}</li>
+<li
+  v-for="(c, index) in list"
+  :key="index"
+  v-if="c.num !== 2"
+>{% raw %}{{ c.string }}{% endraw %}</li>
 ```
 
 이런 식으로 c.num의 2가 아닌 경우의 조건을 걸어서 그려지게 할 수 있습니다. 물론 index도 조건문에 사용할 수 있습니다.
@@ -98,9 +102,9 @@ index는 0부터 시작을 하고, 숫자입니다.
 
 ```vue
 <li v-for="(c, index) in list" :key="index" v-if="c.num !== 2">
-  <span>{{ index + 1 }}</span>
-  <h4>{{ c.string }}의 번호는</h4>
-  <h1>{{ c.num }}입니다.</h1>
+  <span>{% raw %}{{ index + 1 }}{% endraw %}</span>
+  <h4>{% raw %}{{ c.string }}{% endraw %}의 번호는</h4>
+  <h1>{% raw %}{{ c.num }}{% endraw %}입니다.</h1>
 </li>
 ```
 
@@ -112,9 +116,9 @@ index는 0부터 시작을 하고, 숫자입니다.
 <div id="app">
   <ul>
     <li v-for="(c, index) in list" :key="index" v-if="c.num !== 2">
-      <span>{{ index + 1 }}</span>
-      <h4>{{ c.string }}의 번호는</h4>
-      <h1>{{ c.num }}입니다.</h1>
+      <span>{% raw %}{{ index + 1 }}{% endraw %}</span>
+      <h4>{% raw %}{{ c.string }}{% endraw %}의 번호는</h4>
+      <h1>{% raw %}{{ c.num }}{% endraw %}입니다.</h1>
     </li>
   </ul>
 </div>

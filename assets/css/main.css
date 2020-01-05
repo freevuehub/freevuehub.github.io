@@ -35,13 +35,18 @@
   --indigo: #502c6c;
   --orange: #fbb500;
   --lightblue: #e8f3ec;
+  --deepmain: #71ABBD;
+  --main: #71b9c1;
+  --secound: #72BEBF;
+  --lightmain: #CEF3F4;
+  --whitemain: #EEF4F3;
   --breakpoint-xs: 0;
   --breakpoint-sm: 576px;
   --breakpoint-md: 768px;
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;
-  --font-family-sans-serif: "Segoe UI", "Helvetica Neue", "Arial";
-  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --font-family-sans-serif: "Nanum Gothic", "Segoe UI", "Helvetica Neue", "Arial", sans-serif;
+  --font-family-monospace: "Nanum Gothic", SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
 *,
@@ -184,14 +189,14 @@ sup {
 }
 
 a {
-  color: #03a87c;
+  color: var(--main);
   text-decoration: none;
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
 }
 
 a:hover {
-  color: #025d45;
+  color: var(--main);
   text-decoration: underline;
 }
 
@@ -548,7 +553,7 @@ mark,
 
 code {
   font-size: 87.5%;
-  color: #ff0266;
+  color: var(--deepmain);
   word-break: break-word;
 }
 
@@ -2895,6 +2900,44 @@ fieldset:disabled a.btn {
   box-shadow: 0 0 0 0.2rem rgba(33, 37, 41, 0.5);
 }
 
+.btn-main {
+  color: #fff;
+  background-color: var(--main);
+  border-color: var(--main);
+}
+
+.btn-main:hover {
+  color: #fff;
+  background-color: var(--deepmain);
+  border-color: var(--deepmain);
+}
+
+.btn-main:focus,
+.btn-main.focus {
+  box-shadow: 0 0 0 0.2rem rgba(33, 37, 41, 0.5);
+}
+
+.btn-main.disabled,
+.btn-main:disabled {
+  color: #fff;
+  background-color: var(--main);
+  border-color: var(--main);
+}
+
+.btn-main:not(:disabled):not(.disabled):active,
+.btn-main:not(:disabled):not(.disabled).active,
+.show>.btn-main.dropdown-toggle {
+  color: #fff;
+  background-color: var(--deepmain);
+  border-color: var(--deepmain);
+}
+
+.btn-main:not(:disabled):not(.disabled):active:focus,
+.btn-main:not(:disabled):not(.disabled).active:focus,
+.show>.btn-main.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(33, 37, 41, 0.5);
+}
+
 .btn-white {
   color: #212529;
   background-color: #fff;
@@ -3276,16 +3319,16 @@ fieldset:disabled a.btn {
 }
 
 .btn-outline-success {
-  color: #03a87c;
+  color: var(--main);
   background-color: transparent;
   background-image: none;
-  border-color: #03a87c;
+  border-color: var(--main);
 }
 
 .btn-outline-success:hover {
-  color: #fff;
-  background-color: #03a87c;
-  border-color: #03a87c;
+  color: var(--white);
+  background-color: var(--main);
+  border-color: var(--main);
 }
 
 .btn-outline-success:focus,
@@ -5591,6 +5634,7 @@ input[type="button"].btn-block {
   border-radius: 0.25rem;
   font-size: 14px;
   font-weight: 600;
+  flex-wrap: wrap;
 }
 
 .page-link {
@@ -5599,14 +5643,14 @@ input[type="button"].btn-block {
   padding: 0.55rem .8rem;
   margin-left: -1px;
   line-height: 1.25;
-  color: #03a87c;
+  color: var(--main);
   background-color: #fff;
   border: 1px solid #dee2e6;
 }
 
 .page-link:hover {
   z-index: 2;
-  color: #025d45;
+  color: var(--deepmain);
   text-decoration: none;
   background-color: #e9ecef;
   border-color: #dee2e6;
@@ -7536,6 +7580,28 @@ a.bg-lightblue:focus,
 button.bg-lightblue:hover,
 button.bg-lightblue:focus {
   background-color: #c6e2d0 !important;
+}
+
+.bg-main {
+  background-color: var(--main) !important;
+}
+
+a.bg-main:hover,
+a.bg-main:focus,
+button.bg-main:hover,
+button.bg-main:focus {
+  background-color: var(--deepmain) !important;
+}
+
+.bg-white-main {
+  background-color: var(--whitemain) !important;
+}
+
+a.bg-white-main:hover,
+a.bg-white-main:focus,
+button.bg-white-main:hover,
+button.bg-white-main:focus {
+  background-color: var(--deepmain) !important;
 }
 
 .bg-white {
@@ -10828,6 +10894,15 @@ a.text-danger:focus {
   color: #d1154b !important;
 }
 
+.text-deep {
+  color: var(--secound) !important;
+}
+
+a.text-deep:hover,
+a.text-deep:focus {
+  color: var(--deepmain) !important;
+}
+
 .text-light {
   color: #f8f9fa !important;
 }
@@ -10843,7 +10918,7 @@ a.text-light:focus {
 
 a.text-dark:hover,
 a.text-dark:focus {
-  color: #0a0c0d !important;
+  color: var(--main) !important;
 }
 
 .text-white {

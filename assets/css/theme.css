@@ -45,11 +45,11 @@ a:hover {
 }
 
 a {
-	color: #03a87c;
+	color: #71b9c1;
 }
 
 a.text-dark:hover {
-	color: #03a87c !important;
+	color: #71b9c1 !important;
 }
 
 .c-pointer:hover {
@@ -151,7 +151,7 @@ a.text-dark:hover {
 }
 
 .btn-link.btn-primary {
-	color: #03a87c;
+	color: #71b9c1;
 	border-color: transparent;
 }
 
@@ -252,15 +252,15 @@ a.text-dark:hover {
 }
 
 .navbar .highlight .nav-link {
-	color: #03a87c !important;
-	border: 1px solid #03a87c;
+	color: #71b9c1 !important;
+	border: 1px solid #71b9c1;
 	padding: 0.3rem 1rem;
 	border-radius: 3px;
 	font-size: .93rem;
 }
 
 .navbar .highlight .nav-link:hover {
-	background: #03a87c;
+	background: #71b9c1;
 	color: #fff !important;
 }
 
@@ -362,6 +362,12 @@ a.text-dark:hover {
 	padding: 7rem 1rem;
 }
 
+.jumbotron-home {
+	overflow: hidden;
+	box-shadow: 0 3px 0.5em 0 #00000050;
+	border-radius: .5em;
+}
+
 @media (min-width:992px) {
 	.jumbotron-lg-withnav {
 		padding-bottom: calc(10rem - 69.75px);
@@ -434,7 +440,7 @@ a.text-dark:hover {
 }
 
 .bg-primary {
-	fill: #03a87c !important;
+	fill: #71b9c1 !important;
 }
 
 .bg-secondary {
@@ -497,6 +503,14 @@ a.text-dark:hover {
 	fill: #e8f3ec !important;
 }
 
+.bg-main {
+	fill: #71b9c1 !important;
+}
+
+.bg-white-main {
+	fill: #EEF4F3 !important;
+}
+
 .card .date {
 	position: absolute;
 	top: 20px;
@@ -526,7 +540,7 @@ a.text-dark:hover {
 
 .card a:hover {
 	text-decoration: none;
-	color: #03a87c;
+	color: #71b9c1;
 }
 
 .card-pricing .card ul li {
@@ -562,8 +576,8 @@ a.text-dark:hover {
 
 .alert-primary {
 	color: #fff;
-	background-color: #03a87c;
-	border-color: #03a87c;
+	background-color: #71b9c1;
+	border-color: #71b9c1;
 }
 
 .alert-primary hr {
@@ -890,7 +904,7 @@ article:first-letter {
 	float: left;
 	font-size: 5em;
 	line-height: 1;
-	margin: 0 .2em 0 0;
+	margin: 0 .05em 0 0;
 	vertical-align: top;
 }
 
