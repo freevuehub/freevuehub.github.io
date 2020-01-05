@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+
 {% assign author = site.authors[page.author] %}
 <div class="container">
 	<div class="jumbotron jumbotron-fluid mb-3 pl-0 pt-0 pb-0 bg-white position-relative">
@@ -41,14 +42,8 @@ layout: default
 	</div>
 </div>
 
-
-
-
-
 <div class="container-lg pt-4 pb-4">
 	<div class="row justify-content-center">
-
-
 		<!-- Share -->
 		<div class="col-lg-2 pr-4 mb-4 col-md-12">
 			<div class="sticky-top sticky-top-offset text-center">
@@ -68,9 +63,7 @@ layout: default
 			</div>
 		</div>
 
-
 		<div class="col-md-12 col-lg-8">
-
 			<!-- Article -->
 			<article class="article-post">
 				{{ content }}
@@ -112,7 +105,6 @@ layout: default
 			</div> -->
 			{% endif %}
 
-
 			<!-- Author Box -->
 			{% if page.author %}
 			<!-- <div class="row mt-5">
@@ -134,31 +126,34 @@ layout: default
 			{% if page.comments != false %}
 			{% include comments.html %}
 			{% endif %}
-
 		</div>
-
-
 	</div>
 </div>
 
-
 <!-- Aletbar Prev/Next -->
-<div class="alertbar">
+<!-- <div class="alertbar">
 	<div class="container">
 		<div class="row prevnextlinks small font-weight-bold">
 			{% if page.previous.url %}
 			<div class="col-md-6 rightborder pl-0">
-				<a class="text-dark" href="{{ site.baseurl }}{{ page.previous.url }}">{% if page.previous.image %} <img
-						height="30px" class="mr-1" src="{{site.baseurl}}/{{page.previous.image}}"> {% endif %}
-					{{page.previous.title}}</a>
+				<a class="text-dark" href="{{ site.baseurl }}{{ page.previous.url }}">
+					{% if page.previous.image %}
+					<img height="30px" class="mr-1" src="{{site.baseurl}}/{{page.previous.image}}">
+					{% endif %}
+					{{page.previous.title}}
+				</a>
 			</div>
 			{% endif %}
 			{% if page.next.url %}
 			<div class="col-md-6 text-right pr-0">
-				<a class="text-dark" href="{{ site.baseurl }}{{ page.next.url }}"> {{page.next.title}} {% if page.next.image %}
-					<img height="30px" class="ml-1" src="{{site.baseurl}}/{{page.next.image}}"> {% endif %}</a>
+				<a class="text-dark" href="{{ site.baseurl }}{{ page.next.url }}">
+					{{page.next.title}}
+					{% if page.next.image %}
+					<img height="30px" class="ml-1" src="{{site.baseurl}}/{{page.next.image}}">
+					{% endif %}
+				</a>
 			</div>
 			{% endif %}
 		</div>
 	</div>
-</div>
+</div> -->
