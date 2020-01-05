@@ -6,7 +6,7 @@ image: assets/images/function/0/20190415.png
 tag: [Vue.js, javascript]
 ---
 
-```vue
+```html
 <!DOCTYPE html>
 <html>
   <head>
@@ -49,7 +49,7 @@ tag: [Vue.js, javascript]
 
 를 이용하여 Vue.js 파일을 불러옵니다. 그리고
 
-```vue
+```html
 <div id="app">
   {% raw %}{{ message }}{% endraw %}
 </div>
@@ -102,7 +102,7 @@ var App = new Vue({
 
 이미지처럼 태그가 문자로 들어갑니다. 만약 태그로 한번 더 감싸고 싶으면
 
-```vue
+```html
 <div id="app">
   <h3>{% raw %}{{ message }}{% endraw %}</h3>
 </div>
@@ -144,7 +144,7 @@ var App = new Vue({
 
 최종 코드입니다.
 
-```vue
+```html
 <h1>CDN을 이용하여 페이지를 그립니다.</h1>
 <div id="app">
   <h3>{% raw %}{{ message1 }}{% endraw %}</h3>
@@ -152,15 +152,15 @@ var App = new Vue({
 </div>
 
 <script>
-var model1 = 'Hello World'
-var model2 = '오늘은 여기까지'
+  var model1 = 'Hello World'
+  var model2 = '오늘은 여기까지'
 
-var App = new Vue({
-  el: '#app',
-  data: {
-    message1: model1,
-    message2: model2,
-  },
-})
+  var App = new Vue({
+    el: '#app',
+    data: {
+      message1: model1,
+      message2: model2,
+    },
+  })
 </script>
 ```

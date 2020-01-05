@@ -56,7 +56,7 @@ main.js에서는 프로젝트의 전역설정을 할 수 있습니다.
 
 .vue파일을 이용해 컴포넌트를 나누어 사용합니다.
 
-```vue
+```html
 <template>
   <div id="app">
     <img src="./assets/logo.png" />
@@ -65,25 +65,25 @@ main.js에서는 프로젝트의 전역설정을 할 수 있습니다.
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+  import HelloWorld from './components/HelloWorld.vue'
 
-export default {
-  name: 'app',
-  components: {
-    HelloWorld,
-  },
-}
+  export default {
+    name: 'app',
+    components: {
+      HelloWorld,
+    },
+  }
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+  #app {
+    font-family: 'Avenir', Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #2c3e50;
+    margin-top: 60px;
+  }
 </style>
 ```
 

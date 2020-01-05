@@ -10,7 +10,7 @@ tag: [Vue.js, javascript]
 
 그 중에서
 
-```vue
+```html
 <h3>{% raw %}{{ message1 }}{% endraw %}</h3>
 ```
 
@@ -20,25 +20,25 @@ data를 다른 태그를 감싸서 보여주는 방법을 위 코드처럼 작�
 
 예제를 보겠습니다.
 
-```vue
+```html
 <div id="app">
   <div v-html="message1"></div>
   <div v-html="message2"></div>
 </div>
 
 <script>
-var model = {
-  msg1: '<h1>v-html이용하기</h1>',
-  msg2: '<p>Hello World</p>',
-}
+  var model = {
+    msg1: '<h1>v-html이용하기</h1>',
+    msg2: '<p>Hello World</p>',
+  }
 
-var App = new Vue({
-  el: '#app',
-  data: {
-    message1: model.msg1,
-    message2: model.msg2,
-  },
-})
+  var App = new Vue({
+    el: '#app',
+    data: {
+      message1: model.msg1,
+      message2: model.msg2,
+    },
+  })
 </script>
 ```
 
@@ -71,7 +71,7 @@ var App = new Vue({
 
 위와 같이 mse2부분에서 <p>태그를 빼고 text만 넣었습니다.
 
-```vue
+```html
 <div id="app">
   <div v-html="message1"></div>
   <div>
@@ -90,7 +90,7 @@ v-text는 태그를 text로 받아와서 그대로 그려냅니다.
 
 그런데 지난 글과 뭔가 겹치는 부분이 있습니다.
 
-```vue
+```html
 <p v-text="message2"></p>
 ```
 
@@ -98,7 +98,7 @@ v-text는 태그를 text로 받아와서 그대로 그려냅니다.
 
 그래서 v-text대신
 
-```vue
+```html
 <p>{% raw %}{{ message2 }}{% endraw %}</p>
 ```
 

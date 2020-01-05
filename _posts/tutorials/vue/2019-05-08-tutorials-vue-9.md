@@ -10,22 +10,22 @@ tag: [Vue.js, javascript]
 
 v-model사용법을 알아보겠습니다.
 
-```vue
+```html
 <div id="app">
-  텍스트: <input type="text" v-model="message">
+  텍스트: <input type="text" v-model="message" />
 
-  <p>결과: {{ message }}</p>
+  <p>결과: {% row %}{{ message }}{% endrow %}</p>
 </div>
 
 ...
 
 <script>
-var App = new Vue({
-  el: '#app',
-  data: {
-    message: '안녕하세요.',
-  },
-})
+  var App = new Vue({
+    el: '#app',
+    data: {
+      message: '안녕하세요.',
+    },
+  })
 </script>
 ```
 

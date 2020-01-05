@@ -77,7 +77,7 @@ a {
 
 ```html
 <div id="app">
-  <h1>{{ title }}</h1>
+  <h1>{% row %}{{ title }}{% endrow %}</h1>
   <p v-if="show">내가 보이나요?</p>
   <a href="#" @click.prevent="changeDate()">Click!</a>
 </div>
@@ -126,4 +126,4 @@ var App = new Vue({
 
 methods안에 있는 changeDate()가 실행이 되면서 `this.show = true`부분을 통해서 show가 true가 됬었습니다.
 
-그리고 data가 업데이트 되었으니 updated가 실행되고 `this.title = 'Data 업데이트!!!!';`를 통해서 title이 바뀌었습니다.
+그리고 data가 업데이트 되었으니 updated가 실행되고 `this.title = 'Data 업데이트!!!!'`를 통해서 title이 바뀌었습니다.

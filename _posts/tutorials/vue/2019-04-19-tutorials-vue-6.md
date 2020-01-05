@@ -24,7 +24,7 @@ methods말고도 watch, computed등 더 추가할 수 있으나 그 부분은 �
 
 v-on은 이벤트를 사용할 때 필요합니다.
 
-```vue
+```html
 <div id="app">
   <div v-on:click="clickEvent">Click!</div>
 </div>
@@ -56,8 +56,7 @@ var App = new Vue({
   data: {},
   methods: {
     clickEvent: function(event) {
-      console.log('Click! Hello', event.target.tagName)
-      ;('Click! Hello DIV')
+      console.log('Click! Hello', event.target.tagName) //'Click! Hello DIV'
     },
   },
 })
@@ -67,7 +66,7 @@ var App = new Vue({
 
 더 소개하자면
 
-```vue
+```html
 <div id="app">
   <div v-on:click="clickEvent('Vue.js')">Click!</div>
 </div>
@@ -111,7 +110,7 @@ var App = new Vue({
 
 하지만 위에 소개한 매개변수랑 같이 이용할 때에는 조금 복잡해집니다.
 
-```vue
+```html
 <div id="app">
   <div v-on:click="clickEvent('Vue.js', $event)">Click!</div>
 </div>
@@ -121,7 +120,7 @@ var App = new Vue({
 
 그런데 Vue.js에서 지원해주는 이벤트 수식어를 이용하면 편합니다.
 
-```vue
+```html
 <div id="app">
   <div v-on:click.prevent="clickEvent">Click!</div>
 </div>
@@ -131,7 +130,7 @@ var App = new Vue({
 
 이 수식어 말고도 여러 수식어가 있습니다.
 
-```vue
+```html
 <!-- 이벤트 전파가 중단 -->
 <div v-on:click.stop="clickEvent">Click!</div>
 
@@ -147,7 +146,7 @@ var App = new Vue({
 
 수식어는 체이닝이 가능합니다. 그런데 작성한 순서로 실행이 되므로 주의하시기 바랍니다.
 
-```vue
+```html
 <!-- 자신에 대한 클릭만 방지합니다. -->
 <div v-on:click.self.prevent="clickEvent">Click!</div>
 
@@ -157,7 +156,7 @@ var App = new Vue({
 
 v-on도 v-bind처럼 단축해서 작성이 가능합니다.
 
-```vue
+```html
 <div id="app">
   <div @click.prevent="clickEvent">Click!</div>
 </div>

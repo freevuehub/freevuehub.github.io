@@ -10,7 +10,7 @@ tag: [Vue.js, javascript]
 
 > ## v-show
 
-```vue
+```html
 <div id="app">
   <p v-show="true">v-show의 특징</p>
 </div>
@@ -22,7 +22,7 @@ tag: [Vue.js, javascript]
 
 아직까지는 뭐가 바뀐 건지 잘 모르겠습니다. 그러면 코드를 살짝 수정하여 비교해보겠습니다.
 
-```vue
+```html
 <div id="app">
   <p v-show="false">v-show의 특징</p>
 </div>
@@ -38,7 +38,7 @@ v-show안에 값을 true에서 false로 바꿨습니다. 그러면 아래 사진
 
 우선 소스를 수정해보겠습니다.
 
-```vue
+```html
 <div id="app">
   <p v-show="'show' == view">v-show의 특징</p>
 </div>
@@ -65,7 +65,7 @@ model에 'show'라는 string을 지정하고, model을 data의 view에 추가했
 
 조금 더 다르게 응용을 해보겠습니다. 스크립트는 수정을 하지 않고 #app부분만 수정을 해보겠습니다.
 
-```vue
+```html
 <div id="app">
   <p v-show="show">v-show의 특징</p>
 </div>
@@ -89,7 +89,7 @@ v-if는 v-show랑 기능이 같습니다. 조건이 true이면 보여주고 아�
 
 코드를 수정해보겠습니다.
 
-```vue
+```html
 <div id="app">
   <p v-if="false">v-if의 특징</p>
 </div>
@@ -103,7 +103,7 @@ v-if는 v-show랑 기능이 같습니다. 조건이 true이면 보여주고 아�
 
 그리고 추가적인 기능으로
 
-```vue
+```html
 <div id="app">
   <p v-if="false">v-if의 특징</p>
   <p v-else>v-else의 특징</p>
@@ -118,7 +118,7 @@ v-else가 있으니 v-else-if도 있습니다.
 
 기존의 스크립트를 응용해서 v-else-if에 조건을 걸었습니다. 앞서 봤던 것처럼 아래 조건은 true입니다. 그러므로 아래의 <p>태그는 출력이 됩니다.
 
-```vue
+```html
 <div id="app">
   <p v-if="false">v-if의 특징</p>
   <p v-else-if="'show' == view">v-else-if의 특징</p>

@@ -6,7 +6,7 @@ image: assets/images/function/0/20190415.png
 tag: [Vue.js, javascript]
 ---
 
-```vue
+```html
 <input type="text" v-bind:placeholder="placeholder" />
 ```
 
@@ -33,27 +33,27 @@ placeholder가 추가되었습니다. 이런 식으로 href, src등의 태그의
 
 v-bind의 경우 좀 더 간단하게 작성할 수 있는데
 
-```vue
+```html
 <input type="text" :placeholder="placeholder" />
 ```
 
 이런 식으로 v-bind 생략하고를 : 로만 작성이 가능합니다.
 
-```vue
+```html
 <div id="app">
   <input type="text" :placeholder="placeholder" />
 </div>
 
 <script>
-var model = {
-  placeholder: 'Hello Vue.js World',
-}
+  var model = {
+    placeholder: 'Hello Vue.js World',
+  }
 
-var App = new Vue({
-  el: '#app',
-  data: {
-    placeholder: model.placeholder,
-  },
-})
+  var App = new Vue({
+    el: '#app',
+    data: {
+      placeholder: model.placeholder,
+    },
+  })
 </script>
 ```

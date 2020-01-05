@@ -6,24 +6,24 @@ image: assets/images/function/0/20190415.png
 tag: [Vue.js, javascript]
 ---
 
-```vue
+```html
 <div id="app">
   <!-- Message 1 -->
   <h1>나는 메시지입니다.</h1>
-  <p>나는 {{ message }}입니다.</p>
+  <p>나는 {% row %}{{ message }}{% endrow %}입니다.</p>
 
   <!-- Message 2 -->
   <h2>나는 다른 메시지입니다.</h2>
-  <p>{{ AnotherMessage }}</p>
+  <p>{% row %}{{ AnotherMessage }}{% endrow %}</p>
 </div>
 
 <script>
-var App = new Vue({
-  el: '#app',
-  data: {
-    message: 'Vue.js',
-  },
-})
+  var App = new Vue({
+    el: '#app',
+    data: {
+      message: 'Vue.js',
+    },
+  })
 </script>
 ```
 
@@ -79,18 +79,18 @@ var App = new Vue({
 
 v-model을 이용하여 더 재미있는 결과를 얻을 수 있습니다.
 
-```vue
+```html
 <div id="app">
   <!-- Message 1 -->
   <h1>나는 메시지입니다.</h1>
-  <p>나는 {{message}}입니다.</p>
+  <p>나는 {% row %}{{ message }}{% endrow %}입니다.</p>
 
   <!-- Message 2 -->
   <h2>나는 다른 메시지입니다.</h2>
-  <p>{{AnotherMessage}}</p>
+  <p>{% row %}{{ AnotherMessage }}{% endrow %}</p>
 
   <!-- Message Change -->
-  <input type="text" v-model="message">
+  <input type="text" v-model="message" />
 </div>
 ```
 

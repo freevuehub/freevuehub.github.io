@@ -21,7 +21,7 @@ var App = new Vue({
 
 스크립트의 경우는 model을 배열로 작성하고, data의 list에 추가했습니다.
 
-```vue
+```html
 <div id="app">
   <ul>
     <li v-for="c in list" :key="c">v-for</li>
@@ -39,7 +39,7 @@ var App = new Vue({
 
 ![결과 이미지 1]({{ site.baseurl }}/assets/images/vue/5/img1.png)
 
-```vue
+```html
 <li v-for="c in list" :key="c">{% raw %}{{ c }}{% endraw %}</li>
 ```
 
@@ -58,13 +58,13 @@ var model = [
 
 만약 배열안에 Object로 있다하면 :key값에 Object가 들어갈 수 없기 때문에
 
-```vue
+```html
 <li v-for="c in list" :key="c.num">{% raw %}{{ c }}{% endraw %}</li>
 ```
 
 이런식으로 데이터를 타고 들어가서 넣어주는 방법도 있지만, 또 다른 방법으로
 
-```vue
+```html
 <li v-for="(c, index) in list" :key="index">{% raw %}{{ c }}{% endraw %}</li>
 ```
 
@@ -74,7 +74,7 @@ index는 0부터 시작을 하고, 숫자입니다.
 
 이렇게 해서 \{\{ c \}\}를 표현을 하면은 Object가 그대로 그려집니다. 만약 Object안에 string을 보여주고 싶으면
 
-```vue
+```html
 <li v-for="(c, index) in list" :key="index">{% raw %}{{ c.string }}{% endraw %}</li>
 ```
 
@@ -84,12 +84,10 @@ index는 0부터 시작을 하고, 숫자입니다.
 
 좀 더 응용을 해서 조건 렌더링과 같이 사용해 보겠습니다.
 
-```vue
-<li
-  v-for="(c, index) in list"
-  :key="index"
-  v-if="c.num !== 2"
->{% raw %}{{ c.string }}{% endraw %}</li>
+```html
+<li v-for="(c, index) in list" :key="index" v-if="c.num !== 2">
+  {% raw %}{{ c.string }}{% endraw %}
+</li>
 ```
 
 이런 식으로 c.num의 2가 아닌 경우의 조건을 걸어서 그려지게 할 수 있습니다. 물론 index도 조건문에 사용할 수 있습니다.
@@ -100,7 +98,7 @@ index는 0부터 시작을 하고, 숫자입니다.
 
 이렇게 v-for와 v-if 또는 v-show를 이용해서 간단하게 원하는 결과를 얻을 수 있습니다.
 
-```vue
+```html
 <li v-for="(c, index) in list" :key="index" v-if="c.num !== 2">
   <span>{% raw %}{{ index + 1 }}{% endraw %}</span>
   <h4>{% raw %}{{ c.string }}{% endraw %}의 번호는</h4>
@@ -112,7 +110,7 @@ index는 0부터 시작을 하고, 숫자입니다.
 
 ![결과 이미지 5]({{ site.baseurl }}/assets/images/vue/5/img5.png)
 
-```vue
+```html
 <div id="app">
   <ul>
     <li v-for="(c, index) in list" :key="index" v-if="c.num !== 2">
@@ -124,18 +122,18 @@ index는 0부터 시작을 하고, 숫자입니다.
 </div>
 
 <script>
-var model = [
-  {num: 0, string: '가'},
-  {num: 1, string: '나'},
-  {num: 2, string: '다'},
-  {num: 3, string: '라'},
-]
+  var model = [
+    {num: 0, string: '가'},
+    {num: 1, string: '나'},
+    {num: 2, string: '다'},
+    {num: 3, string: '라'},
+  ]
 
-var App = new Vue({
-  el: '#app',
-  data: {
-    list: model,
-  },
-})
+  var App = new Vue({
+    el: '#app',
+    data: {
+      list: model,
+    },
+  })
 </script>
 ```
