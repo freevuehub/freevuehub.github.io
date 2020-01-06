@@ -2,7 +2,7 @@
 layout: post
 title: 'state, this'
 categories: [Tutorials]
-image: assets/images/function/0/20190415.png
+image: assets/images/tutorials/common/vue_bg.png
 tag: [Vue.js, javascript]
 ---
 
@@ -77,7 +77,7 @@ a {
 
 ```html
 <div id="app">
-  <h1>{% row %}{{ title }}{% endrow %}</h1>
+  <h1>{% raw %}{{ title }}{% endraw %}</h1>
   <p v-if="show">내가 보이나요?</p>
   <a href="#" @click.prevent="changeDate()">Click!</a>
 </div>
@@ -102,7 +102,7 @@ var App = new Vue({
 
 결과를 확인해보겠습니다.
 
-![결과 이미지 1]({{ site.baseurl }}/assets/images/vue/8/img1.jpg)
+![결과 이미지 1]({{ site.baseurl }}/assets/images/tutorials/vue/8/img1.jpg)
 
 스크립트 부분만 추가하겠습니다.
 

@@ -2,7 +2,7 @@
 layout: post
 title: 'v-on'
 categories: [Tutorials]
-image: assets/images/function/0/20190415.png
+image: assets/images/tutorials/common/vue_bg.png
 tag: [Vue.js, javascript]
 ---
 

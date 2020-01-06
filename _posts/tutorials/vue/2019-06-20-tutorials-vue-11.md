@@ -2,7 +2,7 @@
 layout: post
 title: 'vue-cli 살펴보기'
 categories: [Tutorials]
-image: assets/images/function/0/20190415.png
+image: assets/images/tutorials/common/vue_bg.png
 tag: [Vue.js, javascript]
 ---
 
@@ -28,4 +28,4 @@ npm install --global vue-cli
 
 위 명령어들을 추가로 실행하면 기본적으로 localhost:8080이 실행됩니다.
 
-![결과 이미지 1]({{ site.baseurl }}/assets/images/vue/11/img1.jpg)
+![결과 이미지 1]({{ site.baseurl }}/assets/images/tutorials/vue/11/img1.jpg)

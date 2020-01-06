@@ -2,7 +2,7 @@
 layout: post
 title: '라이프사이클'
 categories: [Tutorials]
-image: assets/images/function/0/20190415.png
+image: assets/images/tutorials/common/vue_bg.png
 tag: [Vue.js, javascript]
 ---
 
@@ -10,7 +10,7 @@ tag: [Vue.js, javascript]
 
 아래의 사진을 보면 쉽게 이해될 겁니다.
 
-![결과 이미지 1]({{ site.baseurl }}/assets/images/vue/7/img1.png)
+![결과 이미지 1]({{ site.baseurl }}/assets/images/tutorials/vue/7/img1.png)
 
 전부 활용하면 좋지만 주로 사용되는 부분들은 created, mounted, updated, destroyed 입니다.
 

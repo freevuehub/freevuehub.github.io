@@ -2,7 +2,7 @@
 layout: post
 title: 'Vue의 style 지원'
 categories: []
-image: assets/images/function/0/20190415.png
+image: assets/images/tutorials/common/vue_bg.png
 tag: [Vue.js, javascript]
 ---
 

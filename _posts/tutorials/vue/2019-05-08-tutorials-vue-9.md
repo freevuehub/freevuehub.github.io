@@ -2,7 +2,7 @@
 layout: post
 title: 'v-model'
 categories: [Tutorials]
-image: assets/images/function/0/20190415.png
+image: assets/images/tutorials/common/vue_bg.png
 tag: [Vue.js, javascript]
 ---
 
@@ -14,7 +14,7 @@ v-model사용법을 알아보겠습니다.
 <div id="app">
   텍스트: <input type="text" v-model="message" />
 
-  <p>결과: {% row %}{{ message }}{% endrow %}</p>
+  <p>결과: {% raw %}{{ message }}{% endraw %}</p>
 </div>
 
 ...

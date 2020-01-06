@@ -2,7 +2,7 @@
 layout: post
 title: 'v-for'
 categories: [Tutorials]
-image: assets/images/function/0/20190415.png
+image: assets/images/tutorials/common/vue_bg.png
 tag: [Vue.js, javascript]
 ---
 
@@ -37,7 +37,7 @@ var App = new Vue({
 
 결과는 아래 사진과 같이 나옵니다.
 
-![결과 이미지 1]({{ site.baseurl }}/assets/images/vue/5/img1.png)
+![결과 이미지 1]({{ site.baseurl }}/assets/images/tutorials/vue/5/img1.png)
 
 ```html
 <li v-for="c in list" :key="c">{% raw %}{{ c }}{% endraw %}</li>
@@ -45,7 +45,7 @@ var App = new Vue({
 
 이렇게 콧수염식으로 \{\{ c \}\}를 넣으면 list의 데이터들을 순차적으로 보여지게 할 수 있습니다.
 
-![결과 이미지 2]({{ site.baseurl }}/assets/images/vue/5/img2.png)
+![결과 이미지 2]({{ site.baseurl }}/assets/images/tutorials/vue/5/img2.png)
 
 ```javascript
 var model = [
@@ -80,7 +80,7 @@ index는 0부터 시작을 하고, 숫자입니다.
 
 이렇게 콧수염식 안에서 데이터를 타고 들어가면 원하는 결과를 얻을 수 있습니다.
 
-![결과 이미지 3]({{ site.baseurl }}/assets/images/vue/5/img3.png)
+![결과 이미지 3]({{ site.baseurl }}/assets/images/tutorials/vue/5/img3.png)
 
 좀 더 응용을 해서 조건 렌더링과 같이 사용해 보겠습니다.
 
@@ -92,7 +92,7 @@ index는 0부터 시작을 하고, 숫자입니다.
 
 이런 식으로 c.num의 2가 아닌 경우의 조건을 걸어서 그려지게 할 수 있습니다. 물론 index도 조건문에 사용할 수 있습니다.
 
-![결과 이미지 4]({{ site.baseurl }}/assets/images/vue/5/img4.png)
+![결과 이미지 4]({{ site.baseurl }}/assets/images/tutorials/vue/5/img4.png)
 
 조건 렌더링의 경우는 v-show를 사용해도 되지만 위에서는 v-if를 사용했습니다.
 
@@ -108,7 +108,7 @@ index는 0부터 시작을 하고, 숫자입니다.
 
 이런 식으로 index값을 활용할 수도 있고, 반복되는 태그안에 있는 태그들이 있다면 그 태그들도 반복적으로 생성을 합니다.
 
-![결과 이미지 5]({{ site.baseurl }}/assets/images/vue/5/img5.png)
+![결과 이미지 5]({{ site.baseurl }}/assets/images/tutorials/vue/5/img5.png)
 
 ```html
 <div id="app">

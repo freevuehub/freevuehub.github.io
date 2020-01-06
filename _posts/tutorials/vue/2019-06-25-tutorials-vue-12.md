@@ -2,11 +2,11 @@
 layout: post
 title: '구조와 .vue 파일'
 categories: [Tutorials]
-image: assets/images/function/0/20190415.png
+image: assets/images/tutorials/common/vue_bg.png
 tag: [Vue.js, javascript]
 ---
 
-![결과 이미지 1]({{ site.baseurl }}/assets/images/vue/12/img1.jpg)
+![결과 이미지 1]({{ site.baseurl }}/assets/images/tutorials/vue/12/img1.jpg)
 
 cli를 실행하면 위와 같은 구조로 생성이 된 것을 확인할 수 있습니다.
 

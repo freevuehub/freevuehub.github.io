@@ -2,7 +2,7 @@
 layout: post
 title: 'cli로 작업하면서 달라지는 점'
 categories: [Tutorials]
-image: assets/images/function/0/20190415.png
+image: assets/images/tutorials/common/vue_bg.png
 tag: [Vue.js, javascript]
 ---
 

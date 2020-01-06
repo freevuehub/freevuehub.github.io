@@ -2,7 +2,7 @@
 layout: post
 title: 'computed'
 categories: [Tutorials]
-image: assets/images/function/0/20190415.png
+image: assets/images/tutorials/common/vue_bg.png
 tag: [Vue.js, javascript]
 ---
 
@@ -10,11 +10,11 @@ tag: [Vue.js, javascript]
 <div id="app">
   <!-- Message 1 -->
   <h1>나는 메시지입니다.</h1>
-  <p>나는 {% row %}{{ message }}{% endrow %}입니다.</p>
+  <p>나는 {% raw %}{{ message }}{% endraw %}입니다.</p>
 
   <!-- Message 2 -->
   <h2>나는 다른 메시지입니다.</h2>
-  <p>{% row %}{{ AnotherMessage }}{% endrow %}</p>
+  <p>{% raw %}{{ AnotherMessage }}{% endraw %}</p>
 </div>
 
 <script>
@@ -31,7 +31,7 @@ tag: [Vue.js, javascript]
 
 `AnotherMessage`를 찾을 수 없다는 내용입니다.
 
-![결과 이미지 1]({{ site.baseurl }}/assets/images/vue/10/img1.jpg)
+![결과 이미지 1]({{ site.baseurl }}/assets/images/tutorials/vue/10/img1.jpg)
 
 이 에러를 computed를 활용하여 해결해보겠습니다.
 
@@ -53,7 +53,7 @@ computed는 함수를 담아야하기 때문에 각 함수마다 return값이 �
 
 이제 새로고침을 하면은 에러가 사라졌습니다.
 
-![결과 이미지 2]({{ site.baseurl }}/assets/images/vue/10/img2.jpg)
+![결과 이미지 2]({{ site.baseurl }}/assets/images/tutorials/vue/10/img2.jpg)
 
 이 기능은 data를 사용할 때의 기능 차이를 확인해보겠습니다.
 
@@ -83,11 +83,11 @@ v-model을 이용하여 더 재미있는 결과를 얻을 수 있습니다.
 <div id="app">
   <!-- Message 1 -->
   <h1>나는 메시지입니다.</h1>
-  <p>나는 {% row %}{{ message }}{% endrow %}입니다.</p>
+  <p>나는 {% raw %}{{ message }}{% endraw %}입니다.</p>
 
   <!-- Message 2 -->
   <h2>나는 다른 메시지입니다.</h2>
-  <p>{% row %}{{ AnotherMessage }}{% endrow %}</p>
+  <p>{% raw %}{{ AnotherMessage }}{% endraw %}</p>
 
   <!-- Message Change -->
   <input type="text" v-model="message" />
@@ -96,7 +96,7 @@ v-model을 이용하여 더 재미있는 결과를 얻을 수 있습니다.
 
 HTML부분을 수정했습니다.
 
-![결과 이미지 3]({{ site.baseurl }}/assets/images/vue/10/img3.jpg)
+![결과 이미지 3]({{ site.baseurl }}/assets/images/tutorials/vue/10/img3.jpg)
 
 input의 값이 바꾸면 v-model에 의해서 변화값을 관찰하고, message의 값이 바뀝니다.
 
