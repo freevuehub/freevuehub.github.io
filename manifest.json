@@ -1,8 +1,8 @@
 {
   "name": "Freevue",
   "short_name": "Freevue-Hub",
-  "theme_color": "#2196f3",
-  "background_color": "#2196f3",
+  "theme_color": "#71b9c1",
+  "background_color": "#71b9c1",
   "display": "standalone",
   "orientation": "portrait",
   "scope": "/",
