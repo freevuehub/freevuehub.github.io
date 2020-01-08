@@ -90,10 +90,6 @@ layout: default
       data-full-width-responsive="true"
     ></ins>
 
-    <script>
-      ;(adsbygoogle = window.adsbygoogle || []).push({})
-    </script>
-
     <div class="col-md-12 col-lg-8">
       <!-- Article -->
       <article class="article-post">
@@ -121,10 +117,6 @@ layout: default
         data-ad-format="auto"
         data-full-width-responsive="true"
       ></ins>
-
-      <script>
-        ;(adsbygoogle = window.adsbygoogle || []).push({})
-      </script>
       <!-- Mailchimp Subscribe Form -->
       {% if site.mailchimp-list %}
       <!-- <div class="border p-5 bg-lightblue">
@@ -172,6 +164,12 @@ layout: default
       {% if page.comments != false %} {% include comments.html %} {% endif %}
     </div>
   </div>
+
+  <script>
+    window.onload = function() {
+      ;(adsbygoogle = window.adsbygoogle || []).push({})
+    }
+  </script>
 </div>
 
 <!-- Aletbar Prev/Next -->
