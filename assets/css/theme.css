@@ -872,11 +872,11 @@ article img,
 article blockquote,
 article iframed,
 article embed {
-	padding-bottom: 2rem;
-	margin-bottom: 0;
+	--padding-bottom: 2rem;
+	margin-bottom: 2rem;
 }
 
-article p:first-child,
+/* article p:first-child,
 article pre:first-child,
 article figure:first-child,
 article img:first-child,
@@ -884,33 +884,43 @@ article blockquote:first-child,
 article iframed:first-child,
 article embed:first-child {
 	min-height: 5em;
-}
+} */
 
 article blockquote {
-	padding-left: 40px;
+	padding-left: 15px;
 	margin-left: 0px;
 	font-style: italic;
 	position: relative;
+	border-left: 4px solid #71b9c1;
+	background-color: #eee;
+	font-size: 1rem;
+	color: #72BEBF;
+	line-height: 3em;
 }
 
 article blockquote:before {
 	content: "“";
-	font-family: Georgia;
-	font-size: 8rem;
-	margin: -1rem 2rem 0 -3.9rem;
+	display: block;
+	height: 20px;
+	width: 20px;
+	border-radius: 50%;
+	background-color: #71b9c1;
+	font-family: Nanum Gothic;
+	font-size: 1.8rem;
+	line-height: 2.3rem;
+	color: #fff;
 	position: absolute;
-	opacity: 1;
-	float: left;
-	line-height: 1;
+	top: 14px;
+	left: -12px;
 }
 
-article:first-letter {
+/* article:first-letter {
 	float: left;
-	font-size: 4em;
+	font-size: 3.7em;
 	line-height: 1;
 	margin: 0 .05em 0 0;
 	vertical-align: top;
-}
+} */
 
 article h1,
 article h2,

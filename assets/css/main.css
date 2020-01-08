@@ -576,8 +576,8 @@ kbd kbd {
 }
 
 pre {
-  background: #eee;
-  padding: 5px;
+  background: var(--whitemain);
+  padding: 5px 8px;
   font-size: 14px;
   display: block;
   color: #212529;
