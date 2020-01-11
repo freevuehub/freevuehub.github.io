@@ -368,14 +368,15 @@ a.text-dark:hover {
   border-radius: 0.5em;
 }
 
-.jumbotron-home .tofront {
-  padding: 0 !important;
+@media (max-width: 991.98px) {
+  .jumbotron-home .tofront {
+    padding: 0 !important;
+  }
+  
+  .jumbotron-home .tofront .align-self-center {
+    padding: 20px 15px !important;
+  }
 }
-
-.jumbotron-home .tofront .align-self-center {
-  padding: 0 !important;
-}
-
 @media (min-width: 992px) {
   .jumbotron-lg-withnav {
     padding-bottom: calc(10rem - 69.75px);
