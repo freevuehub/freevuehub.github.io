@@ -34,10 +34,22 @@ Vue는 주로 Component로 부분 부분을 나누어 관리합니다. 이 점�
 
 Vue에서 style태그에 scoped와 module을 지원하고 있습니다. 각각의 기능은 비슷합니다. style을 난수화하여 겹치지 않게 해줍니다.
 
-```html
-<!-- ... -->
+> scoped 기본 사용법
+> ```html
+> <!-- ... -->
 
-<style></style>
+> <style scoped>
+> /* css */
+> </style>
 
-<!-- ... -->
-```
+> <!-- ... -->
+> ```
+> module 기본 사용법
+> ```html
+> <!-- ... -->
+> <style scoped>
+> /* css */
+> </style>
+
+> <!-- ... -->
+> ```
