@@ -368,6 +368,14 @@ a.text-dark:hover {
   border-radius: 0.5em;
 }
 
+.jumbotron-home .tofront {
+  padding: 0 !important;
+}
+
+.jumbotron-home .tofront .align-self-center {
+  padding: 0 !important;
+}
+
 @media (min-width: 992px) {
   .jumbotron-lg-withnav {
     padding-bottom: calc(10rem - 69.75px);
@@ -398,10 +406,6 @@ a.text-dark:hover {
     font-size: 2.4rem;
     font-weight: 700;
     line-height: 1.1;
-  }
-
-  .jumbotron-home .tofront {
-    padding: 0 !important;
   }
 }
 
