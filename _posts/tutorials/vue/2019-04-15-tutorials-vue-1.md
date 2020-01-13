@@ -6,6 +6,10 @@ image: assets/images/tutorials/common/vue_bg.png
 tag: [Vue.js, javascript]
 ---
 
+앞으로 Vue에 관하여 소개를 해볼 생각입니다. cdn으로 이용하는 방법에서 vuex까지 소개를 해볼 생각입니다. 이 포스팅들을 읽기 전에 ES6에 대한 기본적인 지식이 필요합니다. 그리고 html과 css의 기본적인 지식도 필요로 합니다.
+
+먼저 cdn으로 Vue를 활용하는 방법을 알아보겠습니다.
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -40,8 +44,6 @@ tag: [Vue.js, javascript]
 위 코드로 작성을 하면 아래와 같은 결과를 얻을 수 있습니다.
 
 ![결과 이미지 1]({{ site.baseurl }}/assets/images/tutorials/vue/1/img1.png)
-
-코드를 분석해보면
 
 ```html
 <script src="https://cdn.jsdelivr.net/npm/vue"></script>
