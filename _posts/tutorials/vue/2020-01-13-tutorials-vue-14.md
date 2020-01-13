@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Vue의 style 지원'
-categories: []
+categories: [Tutorials]
 image: assets/images/tutorials/common/vue_bg.png
 tag: [Vue.js, javascript]
 ---
@@ -37,19 +37,56 @@ Vue에서 style태그에 scoped와 module을 지원하고 있습니다. 각각�
 > scoped 기본 사용법
 > ```html
 > <!-- ... -->
-
+>
 > <style scoped>
 > /* css */
 > </style>
-
+>
 > <!-- ... -->
 > ```
+>
 > module 기본 사용법
 > ```html
 > <!-- ... -->
-> <style scoped>
+> <style module>
 > /* css */
 > </style>
-
+>
 > <!-- ... -->
+> ```
+
+각각의 차이점을 알기 위해서는 검사창이 필요합니다.
+
+scoped는 난수의 속성을 지정하여 class명이 겹치지 않게 합니다. module은 class명을 난수화하여 겹치지 않게 만들어 줍니다. 차이점을 알았으니 작성법을 소개하겠습니다.
+
+scoped는 일반적으로 html에 class를 작성하는 방법과 같습니다.
+
+> scoped 작성법은 다음과 같습니다.
+> ```html
+> <template>
+>   <div class="container">
+>   </div>
+> </template>
+>
+> <style scoped>
+> .container {
+>   /* css 작성 */
+> }
+> </style>
+> ```
+
+하지만 module작성법은 조금 다릅니다. class명을 난수화하기 때문에 난수화된 class를 html에 bind하는 방법으로 작성이 되어야 합니다.
+
+> module 작성법은 다음과 같습니다.
+> ```html
+> <template>
+>   <div :class="$style.container">
+>   </div>
+> </template>
+>
+> <style module>
+> .container {
+>   /* css 작성 */
+> }
+> </style>
 > ```
